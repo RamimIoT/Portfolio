@@ -1,12 +1,12 @@
 # SAKIUL MOWLA RAMIM
 **Senior Embedded Systems & IoT Engineer**
-Chittagong, Bangladesh | +880 1836-655063 | ramim.cse.uctc@gmail.com
+Chittagong, Bangladesh | +880 1836-655063 | ramim.cse.uctc@gmail.com | 
 [LinkedIn](https://linkedin.com/in/ramim256) | [Portfolio: sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot)
 
 ---
 
 ### **PROFESSIONAL SUMMARY**
-Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Orange Pi, STM32) and cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways, and developing scalable Python backends for real-time telemetry.
+Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Raspberry Pi) and scalable cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with **Node-RED**, and developing scalable Python backends for real-time telemetry.
 
 ---
 
