@@ -1,22 +1,22 @@
 # SAKIUL MOWLA RAMIM
 **Senior Embedded Systems & IoT Engineer**
 Chittagong, Bangladesh | +880 1836-655063 | ramim.cse.uctc@gmail.com
-[LinkedIn](https://linkedin.com/in/ramim256) | [Portfolio: sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot)
+[LinkedIn](https://linkedin.com/in/ramim256) | [Portfolio: sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot/about)
 
 ---
 
 ### **PROFESSIONAL SUMMARY**
-Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Orange Pi, STM32) and cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways, and developing scalable Python backends for real-time telemetry.
+Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Orange Pi, STM32) and cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with **Node-RED**, and developing scalable Python backends for real-time telemetry.
 
 ---
 
 ### **TECHNICAL SKILLS**
 * **Microcontrollers:** ESP32 (S2/S3/C3), STM32, Arduino, Raspberry Pi, Orange Pi.
 * **Firmware & OS:** C/C++, FreeRTOS, Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs.
-* **Connectivity & Protocols:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, BLE, WiFi, LoRaWAN, GSM/GPRS, I2S.
+* **Connectivity:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, **ESP-NOW** (Mesh Networking), LoRaWAN, GSM/GPRS, I2S.
+* **Prototyping:** **Node-RED** (Rapid Edge Server Prototyping), MIT App Inventor (MVP Mobile Apps).
 * **Hardware Design:** PCB Design (EasyEDA, KiCad), JLCPCB DFM (SMT Assembly), Circuit Analysis, Solar BMS.
 * **Cloud & DevOps:** InfluxDB, PostgreSQL, Grafana, SSH Remote Management, Docker.
-* **Mobile & Tools:** MIT App Inventor (MVP Apps), VS Code (PlatformIO), Git.
 
 ---
 
@@ -63,8 +63,6 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 **B.Sc. in Computer Science & Engineering**
 *University of Creative Technology, Chittagong (UCTC)* | *2022*
 * **CGPA:** 3.55 / 4.00
-* **Thesis:** [Smart Agriculture Farm Management System using IoT and Image Processing](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)
-* **Industrial Attachment:** [Real-time Water Logging Monitoring and Alert with Computer Vision and IoT](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)
 
 **Diploma in Computer Science & Engineering**
 *Shyamoli Ideal Polytechnic Institute, Chittagong* | *2016*
@@ -75,3 +73,37 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 * **Industrial IoT Attachment** – bdtask Limited (6 Months)
 * **Web Application Development (ASP.NET/C#)** – Beacon IT
 * **IoT & Embedded Systems Training** – ICT Division (LICT)
+
+---
+
+### **NOTABLE PROJECTS**
+*Full case studies available at: [sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot/about)*
+
+* **[Smart Agriculture Farm Management System (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
+    * *Tech Stack:* IoT, Image Processing, Python.
+    * *Description:* An automated farm management system integrating soil sensors and camera feeds to optimize irrigation and detect crop diseases.
+
+* **[Real-time Water Logging Monitoring & Alert System (Industrial Attachment)](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)**
+    * *Tech Stack:* Computer Vision, IoT, Python.
+    * *Description:* Developed a city-wide water logging detection system using street cameras and water level sensors to alert municipal authorities.
+
+* **Cow Health Monitoring System (OTA Enabled)**
+    * *Description:* Wearable IoT device for livestock tracking vital signs and location, featuring Over-The-Air (OTA) firmware updates.
+
+* **Smart Traffic & Street Light Management**
+    * *Description:* Energy-efficient system that adjusts street lighting based on real-time traffic density and ambient light.
+
+* **IoT Security Bot with Telegram Integration**
+    * *Description:* Autonomous surveillance robot using ESP32-CAM that sends intruder alerts and snapshots directly to a Telegram bot.
+
+* **Remote Patient Health Monitoring System**
+    * *Description:* Real-time telemetry of patient vitals (Heart Rate, SpO2, Temperature) to a central doctor's dashboard.
+
+* **Indoor Fire Fighting System**
+    * *Description:* Automated fire detection and suppression system integrated with Arduino IoT Cloud for remote alerts.
+
+* **Environmental Monitoring with Toxic Gas Neutralizer**
+    * *Description:* Industrial safety device that detects hazardous gas leaks and automatically triggers ventilation/neutralization systems.
+
+* **Real-Time Flood Alert System**
+    * *Description:* Early warning system for flood-prone areas using ultrasonic water level sensors and cloud connectivity.
