@@ -6,13 +6,13 @@ Chittagong, Bangladesh | +880 1836-655063 | ramim.cse.uctc@gmail.com
 ---
 
 ### **PROFESSIONAL SUMMARY**
-Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, STM32) and scalable cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with **Node-RED**, and developing scalable Python backends for real-time telemetry.
+Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Orange Pi, STM32) and cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with **Node-RED**, and developing scalable Python backends for real-time telemetry.
 
 ---
 
 ### **TECHNICAL SKILLS**
 * **Microcontrollers:** ESP32 (S2/S3/C3), STM32, Arduino, Raspberry Pi, Orange Pi.
-* **Firmware & OS:** C/C++, FreeRTOS (Multitasking/Real-time), Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs.
+* **Firmware & OS:** C/C++, FreeRTOS, Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs.
 * **Connectivity:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, **ESP-NOW** (Mesh Networking), LoRaWAN, GSM/GPRS, I2S.
 * **Prototyping:** **Node-RED** (Rapid Edge Server Prototyping), MIT App Inventor (MVP Mobile Apps).
 * **Hardware Design:** PCB Design (EasyEDA, KiCad), JLCPCB DFM (SMT Assembly), Circuit Analysis, Solar BMS.
@@ -25,7 +25,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 **NEXUS FISH NETWORK** | *Remote / Hybrid*
 **Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – Present*
 *Spearheading the engineering of "SmartFishAuto™," Bangladesh’s first AI-driven commercial aquaculture ecosystem.*
-* **Product Architecture:** Architected the [Smart Aquaculture Ecosystem](https://sites.google.com/view/ramim-iot/Aquaculture), integrating Sensor Nodes, Automation Units, and Robotics into a unified cloud network.
+* **Product Architecture:** Designed the full hardware ecosystem: **Sensor Nodes (SEN)**, **Automation Units (SW)**, and **Robotic Defense Systems (LR)**.
 * **Industrial PCB Design:** Engineered custom 2-Layer PCBs with **Galvanic Isolation** and **Solar BMS** to ensure 99.9% uptime in harsh saltwater environments.
 * **Firmware Engineering:** Developed non-blocking C++ firmware using **FreeRTOS** on ESP32, enabling concurrent sensor polling (8+ parameters).
 * **Impact:** Implemented "Oxygen-Demand Logic," reducing client energy consumption by **~25%**.
@@ -35,7 +35,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 * **Industrial Architecture:** Led the end-to-end architecture of scalable IIoT ecosystems, bridging industrial edge hardware with cloud infrastructure.
 * **Protocol Integration:** Expertly implemented **Modbus (RTU/TCP)** and **BACnet** to interface ESP32 and Orange Pi gateways with diverse industrial controllers and legacy systems.
 * **Data Pipeline:** Developed efficient **Python backends** utilizing MQTT for real-time telemetry, managing **InfluxDB** for high-volume time-series data and **PostgreSQL** for relational storage.
-* **DevOps & Security:** Ensured robust network integrity via WiFi/Ethernet and utilized **SSH** and **Cronjobs** for secure, remote device management.
+* **DevOps & Security:** Ensured robust network integrity via WiFi/Ethernet and utilized **SSH** and **Cronjobs** for secure, remote device management and automated maintenance.
 
 **PADMA SMART TECHNOLOGY LTD** | *Dhaka, Bangladesh*
 **IoT Engineer** | *Nov 2023 – Jan 2025*
@@ -76,27 +76,34 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 
 ---
 
-### **NOTABLE PROJECTS & CASE STUDIES**
-*Detailed technical breakdowns available via the links below.*
-
-* **[Smart Aquaculture Ecosystem (Full Case Study)](https://sites.google.com/view/ramim-iot/Aquaculture)**
-    * *Overview:* A comprehensive IIoT ecosystem for commercial fish farming, integrating sensing, automation, and robotics.
-
-* **[Industrial Multi-Parameter Water Monitor (NFN-SEN)](https://sites.google.com/view/ramim-iot/NFN-SEN)**
-    * *Tech:* ESP32, RS485 Sensors, Solar BMS.
-    * *Description:* Ruggedized floating node monitoring 8+ parameters (DO, pH, Turbidity) with industrial precision.
-
-* **[Smart Automation Control Unit (NFN-SW)](https://sites.google.com/view/ramim-iot/NFN-SW)**
-    * *Tech:* High-Voltage AC Control, Snubber Circuits, MQTT.
-    * *Description:* 8-Channel switching unit handling heavy inductive loads (aerators) based on AI/Cloud logic.
-
-* **[Autonomous Laser Predator Defense (NFN-LR)](https://sites.google.com/view/ramim-iot/NFN-LR)**
-    * *Tech:* Robotics, Stepper Motors, Motion Algorithms.
-    * *Description:* Dual-axis laser turret using randomized motion patterns to deter predatory birds humanely.
-
-* **[Smart Industrial Production Monitor (IIoT)](https://sites.google.com/view/ramim-iot/Production-Monitor)**
-    * *Tech:* ESP32, TFT Touchscreen, I2S Audio.
-    * *Description:* Edge-computing device for real-time OEE tracking in garment factories with audio feedback loops.
+### **NOTABLE PROJECTS**
+*Full case studies available at: [sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot/about)*
 
 * **[Smart Agriculture Farm Management System (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
-    * *Description:* Automated irrigation and disease detection system using Image Processing and Soil Sensors.
+    * *Tech Stack:* IoT, Image Processing, Python.
+    * *Description:* An automated farm management system integrating soil sensors and camera feeds to optimize irrigation and detect crop diseases.
+
+* **[Real-time Water Logging Monitoring & Alert System (Industrial Attachment)](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)**
+    * *Tech Stack:* Computer Vision, IoT, Python.
+    * *Description:* Developed a city-wide water logging detection system using street cameras and water level sensors to alert municipal authorities.
+
+* **Cow Health Monitoring System (OTA Enabled)**
+    * *Description:* Wearable IoT device for livestock tracking vital signs and location, featuring Over-The-Air (OTA) firmware updates.
+
+* **Smart Traffic & Street Light Management**
+    * *Description:* Energy-efficient system that adjusts street lighting based on real-time traffic density and ambient light.
+
+* **IoT Security Bot with Telegram Integration**
+    * *Description:* Autonomous surveillance robot using ESP32-CAM that sends intruder alerts and snapshots directly to a Telegram bot.
+
+* **Remote Patient Health Monitoring System**
+    * *Description:* Real-time telemetry of patient vitals (Heart Rate, SpO2, Temperature) to a central doctor's dashboard.
+
+* **Indoor Fire Fighting System**
+    * *Description:* Automated fire detection and suppression system integrated with Arduino IoT Cloud for remote alerts.
+
+* **Environmental Monitoring with Toxic Gas Neutralizer**
+    * *Description:* Industrial safety device that detects hazardous gas leaks and automatically triggers ventilation/neutralization systems.
+
+* **Real-Time Flood Alert System**
+    * *Description:* Early warning system for flood-prone areas using ultrasonic water level sensors and cloud connectivity.
