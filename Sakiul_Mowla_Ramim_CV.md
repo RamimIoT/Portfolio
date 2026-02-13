@@ -6,17 +6,17 @@ Chittagong, Bangladesh | [+880 1836-655063](tel:+8801836655063) | ramim.cse.uctc
 ---
 
 ### **PROFESSIONAL SUMMARY**
-Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Raspberry Pi) and scalable cloud infrastructure. Proven track record of leading product life-cycles from prototype to **mass manufacturing** for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with **Node-RED**, and developing scalable Python backends for real-time telemetry.
+Performance-driven **Senior IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Raspberry Pi) and scalable cloud infrastructure. Proven track record of leading product life-cycles from prototype to mass manufacturing for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with Node-RED, and developing scalable Python backends for real-time telemetry.
 
 ---
 
 ### **TECHNICAL SKILLS**
 * **Microcontrollers:** ESP32 (S2/S3/C3), STM32, Arduino, Raspberry Pi, Orange Pi.
-* **Firmware & OS:** C/C++, FreeRTOS, Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs.
-* **Connectivity & Protocols:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, BLE, WiFi, LoRaWAN, GSM/GPRS, I2S.
-* **Hardware Design:** PCB Design (EasyEDA, KiCad), JLCPCB DFM (SMT Assembly), Circuit Analysis, Solar BMS.
+* **Firmware & OS:** C/C++, FreeRTOS, Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs, Node-RED.
+* **Connectivity & Protocols:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, BLE, WiFi, LoRaWAN, GSM/GPRS, I2S, I2C, ESP-NOW.
+* **Hardware Design:** PCB Design (EasyEDA, KiCad), Circuit Analysis, Solar BMS.
 * **Cloud & DevOps:** InfluxDB, PostgreSQL, Grafana, SSH Remote Management, Docker.
-* **Mobile & Tools:** MIT App Inventor (MVP Apps), VS Code (PlatformIO), Git.
+* **Mobile & Tools:** MIT App Inventor (MVP Apps), Arduino IDE, VS Code (PlatformIO), Git.
 
 ---
 
