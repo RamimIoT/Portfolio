@@ -98,7 +98,6 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
     * *Tech:* ESP32, TFT Touchscreen, I2S Audio, SD Logging.
     * *Impact:* Real-time OEE tracking with audio feedback for Garment Industry (RMG).
 
-#### **🔹 INDUSTRIAL & GOVERNMENT SOLUTIONS**
 * **[Predictive Maintenance for British American Tobacco](https://sites.google.com/view/ramim-iot/predictive-maintenance-solutions-for-british-american-tobacco-bangladesh)**
     * *Tech:* Industrial Vibration/Temp Sensors, Modbus.
     * *Impact:* Predictive failure analysis for high-value industrial motors.
@@ -108,7 +107,6 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 * **Smart Water Metering (WASA Project):** Long-range billing system using LoRaWAN Gateways and End-Devices.
 * **Real-Time Multi-Sensor Vehicle Monitoring:** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
 
-#### **🔹 RESEARCH & INNOVATION (Thesis & Prototypes)**
 * **[Smart Agriculture Farm Management (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
     * *Tech:* IoT, Image Processing, Python. Automated irrigation and crop disease detection.
 * **[Real-time Water Logging Monitoring (Industrial Attachment)](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)**
