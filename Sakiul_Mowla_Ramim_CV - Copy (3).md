@@ -76,39 +76,27 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 
 ---
 
-### **NOTABLE PROJECTS**
+### **NOTABLE PROJECTS & CASE STUDIES**
+*Detailed technical breakdowns available via the links below.*
 
-#### **🔹 FLAGSHIP COMMERCIAL PRODUCTS (High Impact)**
 * **[Smart Aquaculture Ecosystem (Full Case Study)](https://sites.google.com/view/ramim-iot/Aquaculture)**
-    * *Role:* Lead Architect. A unified IIoT ecosystem integrating Sensing, Automation, and Robotics.
+    * *Overview:* A comprehensive IIoT ecosystem for commercial fish farming, integrating sensing, automation, and robotics.
+
 * **[Industrial Multi-Parameter Water Monitor (NFN-SEN)](https://sites.google.com/view/ramim-iot/NFN-SEN)**
-    * *Tech:* ESP32, RS485 Sensors, Solar BMS, Galvanic Isolation.
-    * *Impact:* Replaced manual testing with 24/7 telemetry for DO, pH, Turbidity, and Ammonia.
+    * *Tech:* ESP32, RS485 Sensors, Solar BMS.
+    * *Description:* Ruggedized floating node monitoring 8+ parameters (DO, pH, Turbidity) with industrial precision.
+
 * **[Smart Automation Control Unit (NFN-SW)](https://sites.google.com/view/ramim-iot/NFN-SW)**
-    * *Tech:* High-Voltage AC Control, Snubber Circuits, AI Logic.
-    * *Impact:* Reduced energy costs by 25% via "Oxygen-Demand" aeration control.
+    * *Tech:* High-Voltage AC Control, Snubber Circuits, MQTT.
+    * *Description:* 8-Channel switching unit handling heavy inductive loads (aerators) based on AI/Cloud logic.
+
 * **[Autonomous Laser Predator Defense (NFN-LR)](https://sites.google.com/view/ramim-iot/NFN-LR)**
-    * *Tech:* Robotics, Stepper Motors, Randomized Algorithms.
-    * *Impact:* Humane, autonomous bird deterrence for large-scale fish farms.
+    * *Tech:* Robotics, Stepper Motors, Motion Algorithms.
+    * *Description:* Dual-axis laser turret using randomized motion patterns to deter predatory birds humanely.
+
 * **[Smart Industrial Production Monitor (IIoT)](https://sites.google.com/view/ramim-iot/Production-Monitor)**
-    * *Tech:* ESP32, TFT Touchscreen, I2S Audio, SD Logging.
-    * *Impact:* Real-time OEE tracking with audio feedback for Garment Industry (RMG).
+    * *Tech:* ESP32, TFT Touchscreen, I2S Audio.
+    * *Description:* Edge-computing device for real-time OEE tracking in garment factories with audio feedback loops.
 
-#### **🔹 INDUSTRIAL & GOVERNMENT SOLUTIONS**
-* **Smart Water Metering (WASA Project):** Long-range billing system using LoRaWAN Gateways and End-Devices.
-* **Predictive Maintenance (British American Tobacco):** Vibration/Temp monitoring for industrial motors to predict failure.
-* **Landslide Warning System (UN/Rohingya Camp):** Remote telemetry system for heavy rain and landslide detection in vulnerable areas.
-* **Real-Time Multi-Sensor Vehicle Monitoring:** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
-
-#### **🔹 RESEARCH & INNOVATION (Thesis & Prototypes)**
-* **[Smart Agriculture Farm Management (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
-    * *Tech:* IoT, Image Processing. Automated irrigation and crop disease detection.
-* **[Real-time Water Logging Monitoring (Industrial Attachment)](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)**
-    * *Tech:* Computer Vision, IoT. City-wide water level detection using street cameras.
-* **Cow Health Monitoring System:** Wearable tracking device with Over-The-Air (OTA) firmware updates.
-* **IoT Security Bot:** Autonomous ESP32-CAM robot with Telegram integration for intruder alerts.
-* **Smart Traffic & Street Light Management:** Energy-efficient adaptive lighting based on traffic density.
-* **Remote Patient Health Monitoring:** Real-time telemetry of vital signs (ECG, SpO2, Temp).
-* **Indoor Fire Fighting System:** Automated suppression system linked to Arduino IoT Cloud.
-* **Environmental Gas Neutralizer:** Toxic gas detection with automated ventilation triggers.
-* **Real-Time Flood Alert System:** Ultrasonic water level monitoring for flood-prone zones.
+* **[Smart Agriculture Farm Management System (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
+    * *Description:* Automated irrigation and disease detection system using Image Processing and Soil Sensors.
