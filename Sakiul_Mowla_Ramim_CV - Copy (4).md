@@ -95,22 +95,17 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
     * *Impact:* Real-time OEE tracking with audio feedback for Garment Industry (RMG).
 
 #### **🔹 INDUSTRIAL & GOVERNMENT SOLUTIONS**
-* **[Predictive Maintenance for British American Tobacco](https://sites.google.com/view/ramim-iot/predictive-maintenance-solutions-for-british-american-tobacco-bangladesh)**
-    * *Tech:* Industrial Vibration/Temp Sensors, Modbus.
-    * *Impact:* Predictive failure analysis for high-value industrial motors.
-* **[Landslide Warning System (UN/Rohingya Camp)](https://sites.google.com/view/ramim-iot/heavy-rain-warning-and-monitoring-device-to-prevent-landslides)**
-    * *Tech:* Remote Telemetry, Soil Moisture Analysis.
-    * *Impact:* Early warning system for heavy rain and landslides in vulnerable refugee zones.
 * **Smart Water Metering (WASA Project):** Long-range billing system using LoRaWAN Gateways and End-Devices.
+* **Predictive Maintenance (British American Tobacco):** Vibration/Temp monitoring for industrial motors to predict failure.
+* **Landslide Warning System (UN/Rohingya Camp):** Remote telemetry system for heavy rain and landslide detection in vulnerable areas.
 * **Real-Time Multi-Sensor Vehicle Monitoring:** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
 
 #### **🔹 RESEARCH & INNOVATION (Thesis & Prototypes)**
 * **[Smart Agriculture Farm Management (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
-    * *Tech:* IoT, Image Processing, Python. Automated irrigation and crop disease detection.
+    * *Tech:* IoT, Image Processing. Automated irrigation and crop disease detection.
 * **[Real-time Water Logging Monitoring (Industrial Attachment)](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)**
     * *Tech:* Computer Vision, IoT. City-wide water level detection using street cameras.
-* **[Cow Health Monitoring System (OTA Enabled)](https://sites.google.com/view/ramim-iot/cow-health-monitoring-and-alert-system-using-iot)**
-    * *Tech:* Wearable IoT, OTA Updates. Real-time livestock tracking and vital signs monitoring.
+* **Cow Health Monitoring System:** Wearable tracking device with Over-The-Air (OTA) firmware updates.
 * **IoT Security Bot:** Autonomous ESP32-CAM robot with Telegram integration for intruder alerts.
 * **Smart Traffic & Street Light Management:** Energy-efficient adaptive lighting based on traffic density.
 * **Remote Patient Health Monitoring:** Real-time telemetry of vital signs (ECG, SpO2, Temp).
