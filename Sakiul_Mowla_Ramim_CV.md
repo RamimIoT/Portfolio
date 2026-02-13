@@ -23,7 +23,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 ### **PROFESSIONAL EXPERIENCE**
 
 **NEXUS FISH NETWORK** | *Remote / Hybrid*
-**Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – Present*
+**Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – Present* | 
 *Spearheading the engineering of "SmartFishAuto™," Bangladesh’s first AI-driven commercial aquaculture ecosystem.*
 * **Product Architecture:** Designed the full hardware ecosystem: **Sensor Nodes (SEN)**, **Automation Units (SW)**, and **Robotic Defense Systems (LR)**.
 * **Industrial PCB Design:** Engineered custom 2-Layer PCBs with **Galvanic Isolation** and **Solar BMS** to ensure 99.9% uptime in harsh saltwater environments.
@@ -105,7 +105,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
     * *Tech:* Remote Telemetry, Soil Moisture Analysis.
     * *Impact:* Early warning system for heavy rain and landslides in vulnerable refugee zones.
 * **Smart Water Metering (WASA Project):** Long-range billing system using LoRaWAN Gateways and End-Devices.
-* **Real-Time Multi-Sensor Vehicle Monitoring:** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
+* **[Real-Time Multi-Sensor Vehicle Monitoring](https://sites.google.com/view/ramim-iot/advanced-vehicle-safety-and-emergency-response-solution):** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
 
 * **[Smart Agriculture Farm Management (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
     * *Tech:* IoT, Image Processing, Python. Automated irrigation and crop disease detection.
