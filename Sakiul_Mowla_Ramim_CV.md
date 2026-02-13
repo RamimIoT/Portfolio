@@ -1,5 +1,5 @@
 # SAKIUL MOWLA RAMIM
-**Senior Embedded Systems & IoT Engineer**
+**Senior Embedded Systems & IoT Engineer**  
 Chittagong, Bangladesh | [+880 1836-655063](tel:+8801836655063) | ramim.cse.uctc@gmail.com | 
 [LinkedIn](https://linkedin.com/in/ramim256) | [Portfolio: sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot)
 
@@ -14,7 +14,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 * **Microcontrollers:** ESP32 (S2/S3/C3), STM32, Arduino, Raspberry Pi, Orange Pi.
 * **Firmware & OS:** C/C++, FreeRTOS, Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs, Node-RED.
 * **Connectivity & Protocols:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, BLE, WiFi, LoRaWAN, GSM/GPRS, I2S, I2C, ESP-NOW.
-* **Hardware Design:** PCB Design (EasyEDA, KiCad), Circuit Analysis, Solar BMS.
+* **Hardware Design:** PCB Design (EasyEDA), Circuit Analysis, Solar BMS.
 * **Cloud & DevOps:** InfluxDB, PostgreSQL, Grafana, SSH Remote Management, Docker.
 * **Mobile & Tools:** MIT App Inventor (MVP Apps), Arduino IDE, VS Code (PlatformIO), Git.
 
@@ -23,7 +23,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 ### **PROFESSIONAL EXPERIENCE**
 
 **NEXUS FISH NETWORK** | *Remote / Hybrid*
-**Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – Present* | 
+**Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – Present*  
 *Spearheading the engineering of "SmartFishAuto™," Bangladesh’s first AI-driven commercial aquaculture ecosystem.*
 * **Product Architecture:** Designed the full hardware ecosystem: **Sensor Nodes (SEN)**, **Automation Units (SW)**, and **Robotic Defense Systems (LR)**.
 * **Industrial PCB Design:** Engineered custom 2-Layer PCBs with **Galvanic Isolation** and **Solar BMS** to ensure 99.9% uptime in harsh saltwater environments.
