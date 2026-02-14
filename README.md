@@ -62,7 +62,7 @@ Performance-driven **Senior IoT Engineer** with over 4 years of experience archi
 
 **B.Sc. in Computer Science & Engineering**
 *University of Creative Technology, Chittagong (UCTC)* | *2022*
-* **CGPA:** 3.55 / 4.00
+* **CGPA:** 3.56 / 4.00
 * **Thesis:** [Smart Agriculture Farm Management System using IoT and Image Processing](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)
 * **Industrial Attachment:** [Real-time Water Logging Monitoring and Alert with Computer Vision and IoT](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)
 
