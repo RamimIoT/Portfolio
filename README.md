@@ -11,12 +11,12 @@ Performance-driven **IoT Engineer** with over 4 years of experience architecting
 ---
 
 ### **TECHNICAL SKILLS**
-* **Microcontrollers:** ESP32 (S2/S3/C3), STM32, Arduino, Raspberry Pi, Orange Pi.
+* **Microcontrollers & SBC:** ESP32 (S2/S3/C3), ESP8266, STM32, Arduino, Raspberry Pi, Orange Pi.
 * **Firmware & OS:** C/C++, FreeRTOS, Python (Scripting/Backend), MicroPython, Linux (Ubuntu/Debian), Bash Scripting, Cronjobs, Node-RED.
-* **Connectivity & Protocols:** MQTT (Mosquitto), Modbus (RTU/TCP), BACnet, RS-485, BLE, WiFi, LoRaWAN, GSM/GPRS, I2S, I2C, ESP-NOW.
-* **Hardware Design:** PCB Design (EasyEDA), Circuit Analysis, Solar BMS.
-* **Cloud & DevOps:** InfluxDB, PostgreSQL, Grafana, SSH Remote Management, Docker.
-* **Mobile & Tools:** MIT App Inventor (MVP Apps), Arduino IDE, VS Code (PlatformIO), Git.
+* **Connectivity & Protocols:** MQTT (Mosquitto), HTTP/HTTPS, TCP, UDP, Modbus (RTU/TCP), BACnet, BLE, WiFi, LoRaWAN, GSM/GPRS, I2S, I2C, SPI, RF, ESP-NOW.
+* **Hardware Design:** PCB Design (EasyEDA), Logic Analyzer, Circuit Analysis, Solar BMS.
+* **Cloud & DevOps:** InfluxDB, PostgreSQL, Grafana, SSH Remote Management, Docker, AWS.
+* **Mobile & Tools:** MIT App Inventor (MVP Apps), Arduino IDE, VS Code (PlatformIO), Git-GitHub.
 
 ---
 
