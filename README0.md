@@ -22,16 +22,8 @@ Performance-driven **IoT Engineer** with over 4 years of experience architecting
 
 ### **PROFESSIONAL EXPERIENCE**
 
-**SMARTDATA TECHNOLOGIES LIMITED** | *Dhaka, Bangladesh (Banani Office) / On-site*
-**Lead IoT Engineer** | *May 2026 – Present*
-* **Technical Leadership:** Directing cross-functional engineering workflows, mentoring developers, and aligning R&D initiatives with core business objectives to deliver scalable products.
-* **System Architecture:** Designing robust edge-to-cloud architectures for industrial automation, smart agriculture, and predictive maintenance using **ESP32, STM32, Radxa ROCK 5B+, DeepX NPU**, and **Raspberry Pi**.
-* **Industrial Connectivity:** Architecting high-reliability communication networks for diverse operational environments using **LoRaWAN, MQTT, Modbus (RTU/TCP), BACnet**, and **ESP-NOW**.
-* **Data Infrastructure:** Orchestrating backend telemetry pipelines with **Docker, Node-RED, InfluxDB, and Grafana** for real-time system monitoring, control, and visualization.
-* **Rapid Prototyping & R&D:** Driving continuous innovation, testing, and on-ground deployment of custom hardware modules and firmware (**FreeRTOS**) to solve critical operational bottlenecks.
-
 **NEXUS FISH NETWORK** | *Remote / Hybrid*
-**Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – May 2026*  
+**Lead R&D Engineer (IoT & Hardware)** | *Feb 2025 – Present*  
 *Spearheading the engineering of "SmartFishAuto™," Bangladesh’s first AI-driven commercial aquaculture ecosystem.*
 * **Product Architecture:** Designed the full hardware ecosystem: **Sensor Nodes (SEN)**, **Automation Units (SW)**, and **Robotic Defense Systems (LR)**.
 * **Industrial PCB Design:** Engineered custom 2-Layer PCBs with **Galvanic Isolation** and **Solar BMS** to ensure 99.9% uptime in harsh saltwater environments.
