@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakiul Mowla Ramim · Lead IoT Engineer</title>
+  <meta name="description" content="Sakiul Mowla Ramim (IoTWithRamim) — Lead IoT & Embedded Systems Engineer from Bangladesh. Custom PCBs, FreeRTOS firmware, industrial protocols and multi-tenant IoT platforms that sense, decide and act.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/Portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sakiul Mowla Ramim · Lead IoT Engineer">
+  <meta property="og:description" content="Edge hardware, firmware and IoT platforms that sense, decide and act. 4+ years across aquaculture, utilities, energy and industry.">
+  <meta property="og:url" content="https://ramimiot.github.io/Portfolio/">
+  <meta property="og:image" content="https://ramimiot.github.io/Portfolio/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else if (window.matchMedia('(prefers-color-scheme: light)').matches) document.documentElement.setAttribute('data-theme', 'light');
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sakiul Mowla Ramim",
+    "alternateName": "IoTWithRamim",
+    "jobTitle": "Lead IoT Engineer",
+    "worksFor": { "@type": "Organization", "name": "SmartData Technologies Limited" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Chittagong", "addressCountry": "BD" },
+    "email": "mailto:ramim.cse.uctc@gmail.com",
+    "url": "https://ramimiot.github.io/Portfolio/",
+    "sameAs": [
+      "https://linkedin.com/in/ramim256",
+      "https://github.com/RamimIoT",
+      "https://sites.google.com/view/ramim-iot"
+    ],
+    "alumniOf": "University of Creative Technology, Chittagong",
+    "knowsAbout": ["IoT", "Embedded Systems", "ESP32", "FreeRTOS", "MQTT", "Modbus", "LoRaWAN", "PCB Design", "TimescaleDB"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></g></symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></g></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+      <symbol id="i-radio" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></g></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></g></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></g></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></g></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></g></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <span class="brand-mark" aria-hidden="true">SR</span>
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn-sm btn-primary nav-cv" href="assets/Sakiul_Mowla_Ramim_CV.pdf" download>
+          <svg class="ico"><use href="#i-download"/></svg><span>CV</span>
+        </a>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg class="ico ico-open"><use href="#i-menu"/></svg>
+          <svg class="ico ico-close"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill"><span class="dot" aria-hidden="true"></span>Lead IoT Engineer · SmartData Technologies</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad">Sakiul Mowla Ramim</span>.
+            <span class="hero-sub">I build IoT systems that <em>sense</em>, <em>decide</em> and <em>act</em>.</span>
+          </h1>
+          <p class="lead">
+            From custom PCBs and FreeRTOS firmware to industrial protocols and multi-tenant cloud platforms,
+            I engineer the whole stack between a sensor in the field and a decision on a dashboard.
+            4+ years across aquaculture, utilities, energy and industry, all designed and built in Bangladesh.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#work">See my work <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="assets/Sakiul_Mowla_Ramim_CV.pdf" download><svg class="ico"><use href="#i-download"/></svg> Download CV</a>
+          </div>
+          <ul class="hero-social" aria-label="Profiles">
+            <li><a href="https://linkedin.com/in/ramim256" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/RamimIoT" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico"><use href="#i-github"/></svg></a></li>
+            <li><a href="mailto:ramim.cse.uctc@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-mail"/></svg></a></li>
+            <li class="hero-loc"><svg class="ico"><use href="#i-pin"/></svg> Chittagong &amp; Dhaka, Bangladesh</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="console" role="img" aria-label="Animated illustration of live MQTT sensor telemetry">
+            <div class="console-bar">
+              <span class="c-dot r"></span><span class="c-dot y"></span><span class="c-dot g"></span>
+              <span class="console-title">mqtt · live telemetry</span>
+              <span class="console-live"><span class="dot"></span>LIVE</span>
+            </div>
+            <div class="console-gauges">
+              <div class="gauge"><span class="g-label">Soil moisture</span><span class="g-val" data-gauge="soil">21.8<small>%</small></span></div>
+              <div class="gauge"><span class="g-label">Dissolved O₂</span><span class="g-val" data-gauge="o2">7.23<small>mg/L</small></span></div>
+              <div class="gauge"><span class="g-label">Relay CH6</span><span class="g-val relay" data-gauge="relay">OFF</span></div>
+            </div>
+            <svg class="spark" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="sg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".35"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+              <path id="spark-area" fill="url(#sg)" d=""/>
+              <path id="spark-line" fill="none" stroke="var(--accent)" stroke-width="2" d=""/>
+            </svg>
+            <ol class="console-log" id="console-log" aria-hidden="true"></ol>
+          </div>
+          <div class="float-chip chip-a"><svg class="ico"><use href="#i-chip"/></svg>ESP32 · FreeRTOS</div>
+          <div class="float-chip chip-b"><svg class="ico"><use href="#i-radio"/></svg>MQTT · Modbus · LoRaWAN</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats" aria-label="Highlights">
+          <li><span class="stat-num" data-count="4" data-suffix="+">0</span><span class="stat-label">Years building IoT</span></li>
+          <li><span class="stat-num" data-count="25" data-prefix="~" data-suffix="%">0</span><span class="stat-label">Energy cut with Oxygen-Demand aeration</span></li>
+          <li><span class="stat-num" data-count="40" data-suffix="%">0</span><span class="stat-label">Longer field battery life</span></li>
+          <li><span class="stat-num" data-count="440">0</span><span class="stat-label">Automated tests on my IoT platform</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">01 · About</p>
+          <h2>Bridging industrial edge hardware and scalable cloud infrastructure</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a performance-driven IoT and embedded systems engineer. I run my own hardware R&amp;D lab and
+              have taken products from first prototype to small-batch manufacturing: saltwater-proof sensor
+              nodes for fish farms, LoRaWAN smart water meters for a government utility, predictive-maintenance
+              sensors for a multinational factory, and now a multi-tenant IoT platform for SmartData Technologies.
+            </p>
+            <p>
+              My mission, under the <strong>IoTWithRamim</strong> name, is to prove that top-tier hardware,
+              firmware and platforms can be designed and built locally in Bangladesh instead of imported.
+            </p>
+            <div class="sda" aria-label="Sense, Decide, Act">
+              <div class="sda-step"><span class="sda-n">Sense</span><span>Measure the real world reliably, even in harsh, noisy, battery-powered sites.</span></div>
+              <svg class="sda-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+              <div class="sda-step"><span class="sda-n">Decide</span><span>Understand context in real time with rules, hysteresis and human-in-the-loop safety.</span></div>
+              <svg class="sda-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+              <div class="sda-step"><span class="sda-n">Act</span><span>Switch the physical world: relays, pumps, aerators, and know that it really happened.</span></div>
+            </div>
+          </div>
+
+          <ul class="capability-grid">
+            <li class="cap reveal"><span class="cap-ico"><svg class="ico"><use href="#i-chip"/></svg></span><h3>Hardware &amp; PCB</h3><p>2-layer PCB design in EasyEDA, galvanic isolation, solar BMS, snubbers and high-voltage AC control.</p></li>
+            <li class="cap reveal"><span class="cap-ico"><svg class="ico"><use href="#i-code"/></svg></span><h3>Firmware</h3><p>Non-blocking C/C++ on FreeRTOS, register-level peripherals, ISRs, deep sleep, OTA and captive-portal provisioning.</p></li>
+            <li class="cap reveal"><span class="cap-ico"><svg class="ico"><use href="#i-radio"/></svg></span><h3>Connectivity</h3><p>MQTT, Modbus RTU/TCP over RS-485, BACnet, LoRaWAN, ESP-NOW, BLE and GSM, built to survive the field.</p></li>
+            <li class="cap reveal"><span class="cap-ico"><svg class="ico"><use href="#i-server"/></svg></span><h3>Platforms &amp; Data</h3><p>EMQX, TimescaleDB/PostgreSQL, Node.js/TypeScript, Next.js, Grafana and Docker, with security built in.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section class="section section-alt" id="work">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">02 · Featured work</p>
+          <h2>Two systems I architected end to end</h2>
+        </header>
+
+        <!-- SmartSense -->
+        <article class="feature reveal">
+          <div class="feature-body">
+            <p class="feature-meta"><span class="tag tag-accent">2026 · SmartData Technologies</span><span class="tag"><svg class="ico"><use href="#i-lock"/></svg> Private codebase</span></p>
+            <h3>SmartSense: a multi-tenant IoT platform</h3>
+            <p class="feature-lead">
+              SmartData's own platform for every sensor and actuator product the company builds.
+              An organisation signs in, registers sites, gateways and devices, gets MQTT credentials
+              locked to its own topics, and sees live readings, charts, alerts and reports. Rules switch relays
+              from live sensor data, safely.
+            </p>
+            <ul class="checks">
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Tenant isolation in four layers:</strong> per-organisation broker ACLs, server-verified sessions, Postgres row-level security and composite foreign keys, all covered by mutation-checked negative tests.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Automation engine:</strong> and/or condition trees across sensors, directional hysteresis, cooldowns, rule pairs, and "ask a person first" approvals.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Reconciliation:</strong> compares what automation intended with what the relay reported, and corrects drift after power cuts and reboots.</span></li>
+              <li><svg class="ico"><use href="#i-check"/></svg><span><strong>For operators:</strong> live push over Server-Sent Events, drag-and-drop dashboards, e-mail and Telegram alerts, immutable daily PDF reports, and a one-command installer for any Docker host.</span></li>
+            </ul>
+            <ul class="metrics">
+              <li><strong>440</strong><span>automated tests</span></li>
+              <li><strong>108</strong><span>documented design decisions</span></li>
+              <li><strong>45</strong><span>schema migrations</span></li>
+              <li><strong>~5 wks</strong><span>plan to production</span></li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li>EMQX</li><li>TimescaleDB</li><li>PostgreSQL RLS</li><li>Node.js 24</li><li>TypeScript</li><li>Next.js</li><li>Grafana</li><li>Docker</li><li>ESP32</li>
+            </ul>
+          </div>
+
+          <figure class="feature-visual arch" aria-label="SmartSense data flow diagram">
+            <svg viewBox="0 18 420 334" role="img" aria-labelledby="arch-title">
+              <title id="arch-title">Devices publish over MQTT to EMQX, which also feeds a raw capture store; the core service stores readings in TimescaleDB, evaluates rules and sends relay commands back through EMQX to the device; the dashboard and Grafana read through row-level security.</title>
+              <defs>
+                <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="var(--muted)"/></marker>
+              </defs>
+              <g class="arch-edges" stroke="var(--line-strong)" stroke-width="1.6" fill="none" marker-end="url(#ah)">
+                <path d="M116 64 H158"/>
+                <path d="M158 88 H116" class="edge-back"/>
+                <path d="M262 75 H304"/>
+                <path d="M190 110 V160"/>
+                <path d="M234 160 V110" class="edge-back"/>
+                <path d="M210 230 V270"/>
+                <path d="M150 302 H116"/>
+              </g>
+              <g class="arch-flow" fill="none" stroke-width="2.4" stroke-linecap="round">
+                <path d="M116 64 H158" class="flow"/>
+                <path d="M190 110 V160" class="flow"/>
+                <path d="M210 230 V270" class="flow"/>
+              </g>
+              <g class="arch-nodes">
+                <g><rect x="8" y="40" width="108" height="70" rx="12"/><text x="62" y="70" class="n-t">Devices</text><text x="62" y="88" class="n-s">ESP32 · relays</text></g>
+                <g><rect x="158" y="40" width="104" height="70" rx="12" class="hl"/><text x="210" y="70" class="n-t">EMQX</text><text x="210" y="88" class="n-s">ACL per tenant</text></g>
+                <g><rect x="304" y="40" width="108" height="70" rx="12"/><text x="358" y="70" class="n-t">Capture</text><text x="358" y="88" class="n-s">raw corpus</text></g>
+                <g><rect x="115" y="160" width="190" height="70" rx="12" class="hl"/><text x="210" y="190" class="n-t">Core service</text><text x="210" y="208" class="n-s">ingest · rules · commands</text></g>
+                <g><rect x="150" y="270" width="120" height="64" rx="12"/><text x="210" y="297" class="n-t">TimescaleDB</text><text x="210" y="315" class="n-s">row-level security</text></g>
+                <g><rect x="8" y="270" width="108" height="64" rx="12"/><text x="62" y="297" class="n-t">Dashboard</text><text x="62" y="315" class="n-s">Next.js · Grafana</text></g>
+              </g>
+              <text x="137" y="104" class="n-cap" text-anchor="middle">cmd</text>
+              <text x="242" y="139" class="n-cap">rules → relays</text>
+              <text x="182" y="139" class="n-cap" text-anchor="end">readings</text>
+            </svg>
+            <figcaption>Readings flow down; relay commands flow back to the device with acknowledgement tracking.</figcaption>
+          </figure>
+        </article>
+
+        <!-- SmartFishAuto -->
+        <article class="feature feature-rev reveal">
+          <div class="feature-body">
+            <p class="feature-meta"><span class="tag tag-accent">2025 – 2026 · Nexus Fish Network</span></p>
+            <h3>SmartFishAuto™: AI-driven aquaculture ecosystem</h3>
+            <p class="feature-lead">
+              Described as Bangladesh's first AI-driven commercial aquaculture ecosystem. I led R&amp;D and
+              designed all three hardware families, their firmware and their PCBs, for 24/7 operation in saltwater.
+            </p>
+            <div class="trio">
+              <a class="trio-card" href="https://sites.google.com/view/ramim-iot/NFN-SEN" target="_blank" rel="noopener">
+                <span class="trio-k">NFN-SEN</span><span class="trio-t">Water monitor</span>
+                <span class="trio-d">DO, pH, turbidity and ammonia over RS-485, solar BMS, galvanic isolation.</span>
+              </a>
+              <a class="trio-card" href="https://sites.google.com/view/ramim-iot/NFN-SW" target="_blank" rel="noopener">
+                <span class="trio-k">NFN-SW</span><span class="trio-t">Automation unit</span>
+                <span class="trio-d">High-voltage AC control with snubbers and Oxygen-Demand aeration logic.</span>
+              </a>
+              <a class="trio-card" href="https://sites.google.com/view/ramim-iot/NFN-LR" target="_blank" rel="noopener">
+                <span class="trio-k">NFN-LR</span><span class="trio-t">Laser defence</span>
+                <span class="trio-d">Autonomous, humane bird deterrence with steppers and randomised patterns.</span>
+              </a>
+            </div>
+            <ul class="metrics">
+              <li><strong>~25%</strong><span>client energy saved</span></li>
+              <li><strong>99.9%</strong><span>uptime design target</span></li>
+              <li><strong>8+</strong><span>parameters polled concurrently</span></li>
+            </ul>
+            <a class="link-arrow" href="https://sites.google.com/view/ramim-iot/Aquaculture" target="_blank" rel="noopener">Read the full case study <svg class="ico"><use href="#i-external"/></svg></a>
+          </div>
+          <figure class="feature-visual pond" aria-hidden="true">
+            <div class="pond-wrap">
+              <div class="pond-water"><span class="wave w1"></span><span class="wave w2"></span><span class="wave w3"></span></div>
+              <div class="pond-node n1"><span>SEN</span></div>
+              <div class="pond-node n2"><span>SW</span></div>
+              <div class="pond-node n3"><span>LR</span></div>
+              <div class="pond-read"><span>O₂</span><strong data-pond="o2">6.8</strong><small>mg/L</small></div>
+              <div class="pond-read r2"><span>Aerator</span><strong data-pond="aer">AUTO</strong></div>
+            </div>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">03 · Projects</p>
+          <h2>Selected projects</h2>
+          <p class="section-sub">Field-tested work across industries. Filter by domain; cards with a link open the full case study.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="aqua" aria-pressed="false">Aquaculture</button>
+          <button class="filter" type="button" data-filter="industry" aria-pressed="false">Industrial</button>
+          <button class="filter" type="button" data-filter="city" aria-pressed="false">Utilities &amp; City</button>
+          <button class="filter" type="button" data-filter="agri" aria-pressed="false">Agriculture</button>
+          <button class="filter" type="button" data-filter="safety" aria-pressed="false">Health &amp; Safety</button>
+        </div>
+
+        <ul class="project-grid" id="project-grid">
+          <li class="project" data-cat="aqua">
+            <a href="https://sites.google.com/view/ramim-iot/Aquaculture" target="_blank" rel="noopener">
+              <span class="p-cat">Aquaculture</span>
+              <h3>Smart Aquaculture Ecosystem</h3>
+              <p>Lead architect of a unified IIoT ecosystem combining sensing, automation and robotics into one closed loop.</p>
+              <ul class="p-tags"><li>IIoT</li><li>ESP32</li><li>Closed loop</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="aqua">
+            <a href="https://sites.google.com/view/ramim-iot/NFN-SEN" target="_blank" rel="noopener">
+              <span class="p-cat">Aquaculture</span>
+              <h3>Industrial Multi-Parameter Water Monitor</h3>
+              <p>Replaced manual pond testing with 24/7 telemetry for DO, pH, turbidity and ammonia.</p>
+              <ul class="p-tags"><li>RS-485</li><li>Solar BMS</li><li>Isolation</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="aqua">
+            <a href="https://sites.google.com/view/ramim-iot/NFN-SW" target="_blank" rel="noopener">
+              <span class="p-cat">Aquaculture</span>
+              <h3>Smart Automation Control Unit</h3>
+              <p>Cut aeration energy by about 25% with Oxygen-Demand control of high-voltage AC loads.</p>
+              <ul class="p-tags"><li>AC control</li><li>Snubbers</li><li>Logic</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="aqua">
+            <a href="https://sites.google.com/view/ramim-iot/NFN-LR" target="_blank" rel="noopener">
+              <span class="p-cat">Aquaculture</span>
+              <h3>Autonomous Laser Predator Defense</h3>
+              <p>Humane, autonomous bird deterrence for large fish farms using steppers and randomised algorithms.</p>
+              <ul class="p-tags"><li>Robotics</li><li>Steppers</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="industry">
+            <a href="https://sites.google.com/view/ramim-iot/Production-Monitor" target="_blank" rel="noopener">
+              <span class="p-cat">Industrial</span>
+              <h3>Smart Production Monitor (OEE)</h3>
+              <p>Real-time OEE for garment factories on TFT touchscreens with I2S audio alerts and SD-card logging.</p>
+              <ul class="p-tags"><li>ESP32</li><li>I2S</li><li>RMG</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="industry">
+            <a href="https://sites.google.com/view/ramim-iot/predictive-maintenance-solutions-for-british-american-tobacco-bangladesh" target="_blank" rel="noopener">
+              <span class="p-cat">Industrial</span>
+              <h3>Predictive Maintenance for BAT</h3>
+              <p>Vibration and temperature sensing over Modbus to predict motor failures at British American Tobacco Bangladesh.</p>
+              <ul class="p-tags"><li>Modbus</li><li>RS-485</li><li>High EMI</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="industry">
+            <div class="p-static">
+              <span class="p-cat">Industrial</span>
+              <h3>Universal Sensor &amp; Relay Firmware</h3>
+              <p>One ESP32 codebase for soil, water-quality, water-level and air sensors plus an 8-relay switch with an on-device scheduler.</p>
+              <ul class="p-tags"><li>FreeRTOS</li><li>MQTT failover</li><li>GitHub OTA</li></ul>
+              <span class="p-note">SmartData Technologies</span>
+            </div>
+          </li>
+          <li class="project" data-cat="city">
+            <div class="p-static">
+              <span class="p-cat">Utilities &amp; City</span>
+              <h3>Smart Water Metering</h3>
+              <p>LoRaWAN gateway and end-device integration for long-range remote billing on a government utility project.</p>
+              <ul class="p-tags"><li>LoRaWAN</li><li>Deep sleep</li><li>40% battery</li></ul>
+              <span class="p-note">Chattogram WASA · Padma Smart Technology</span>
+            </div>
+          </li>
+          <li class="project" data-cat="city safety">
+            <a href="https://sites.google.com/view/ramim-iot/heavy-rain-warning-and-monitoring-device-to-prevent-landslides" target="_blank" rel="noopener">
+              <span class="p-cat">Utilities &amp; City</span>
+              <h3>Heavy Rain &amp; Landslide Warning</h3>
+              <p>Remote soil-moisture telemetry and early warnings for vulnerable refugee zones in Ukhiya (UN/NGO project).</p>
+              <ul class="p-tags"><li>Telemetry</li><li>Early warning</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="city">
+            <a href="https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot" target="_blank" rel="noopener">
+              <span class="p-cat">Utilities &amp; City</span>
+              <h3>Water Logging Monitoring with Computer Vision</h3>
+              <p>City-wide water level detection from street cameras combined with IoT alerts.</p>
+              <ul class="p-tags"><li>Computer vision</li><li>Python</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="city">
+            <div class="p-static">
+              <span class="p-cat">Utilities &amp; City</span>
+              <h3>Smart Traffic &amp; Street Lighting</h3>
+              <p>Energy-efficient adaptive street lighting that follows traffic density, plus an ultrasonic flood alert system.</p>
+              <ul class="p-tags"><li>Smart city</li><li>Ultrasonic</li></ul>
+            </div>
+          </li>
+          <li class="project" data-cat="agri">
+            <a href="https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing" target="_blank" rel="noopener">
+              <span class="p-cat">Agriculture</span>
+              <h3>Smart Farm Management (Thesis)</h3>
+              <p>Automated irrigation and crop disease detection using IoT and image processing.</p>
+              <ul class="p-tags"><li>IoT</li><li>Image processing</li><li>Python</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="agri">
+            <div class="p-static">
+              <span class="p-cat">Agriculture</span>
+              <h3>GSM Pump Controller with Water Billing</h3>
+              <p>SMS, call and local-web control of irrigation pumps, with hourly bills that deduct power-cut time automatically.</p>
+              <ul class="p-tags"><li>ESP32 + SIM800L</li><li>Billing engine</li></ul>
+              <span class="p-note">In development · 2026</span>
+            </div>
+          </li>
+          <li class="project" data-cat="agri">
+            <a href="https://sites.google.com/view/ramim-iot/cow-health-monitoring-and-alert-system-using-iot" target="_blank" rel="noopener">
+              <span class="p-cat">Agriculture</span>
+              <h3>Cow Health Monitoring</h3>
+              <p>Wearable livestock tracking and vital-sign monitoring with over-the-air firmware updates.</p>
+              <ul class="p-tags"><li>Wearable</li><li>OTA</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="safety">
+            <a href="https://sites.google.com/view/ramim-iot/advanced-vehicle-safety-and-emergency-response-solution" target="_blank" rel="noopener">
+              <span class="p-cat">Health &amp; Safety</span>
+              <h3>Multi-Sensor Vehicle Safety</h3>
+              <p>Accident, fire and fuel-leak detection with location-based emergency notifications.</p>
+              <ul class="p-tags"><li>Bare metal</li><li>GPS</li></ul>
+              <span class="p-link">Case study <svg class="ico"><use href="#i-external"/></svg></span>
+            </a>
+          </li>
+          <li class="project" data-cat="safety">
+            <div class="p-static">
+              <span class="p-cat">Health &amp; Safety</span>
+              <h3>Remote Patient Monitoring</h3>
+              <p>Real-time telemetry of ECG, SpO₂ and temperature for remote care.</p>
+              <ul class="p-tags"><li>Health IoT</li><li>Telemetry</li></ul>
+            </div>
+          </li>
+          <li class="project" data-cat="safety">
+            <div class="p-static">
+              <span class="p-cat">Health &amp; Safety</span>
+              <h3>IoT Security Bot</h3>
+              <p>Autonomous ESP32-CAM robot that sends intruder alerts to Telegram.</p>
+              <ul class="p-tags"><li>ESP32-CAM</li><li>Telegram</li></ul>
+            </div>
+          </li>
+          <li class="project" data-cat="safety">
+            <div class="p-static">
+              <span class="p-cat">Health &amp; Safety</span>
+              <h3>Fire Fighting &amp; Gas Neutralizer</h3>
+              <p>Automated indoor fire suppression on Arduino IoT Cloud, and toxic-gas detection with ventilation triggers.</p>
+              <ul class="p-tags"><li>Arduino IoT Cloud</li><li>Gas sensing</li></ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">04 · Experience</p>
+          <h2>Where I've built things</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl-when">May 2026 – Present</div>
+            <div class="tl-card">
+              <h3>Lead IoT Engineer <span>· SmartData Technologies Limited</span></h3>
+              <p class="tl-where">Dhaka (Banani office) · On-site</p>
+              <ul>
+                <li>Lead R&amp;D and cross-functional engineering; mentor developers and align IoT work with business goals.</li>
+                <li>Architected and built SmartSense, the company's multi-tenant IoT platform, and authored its architecture and hardware-sourcing strategy.</li>
+                <li>Edge-to-cloud designs on ESP32, STM32, Radxa ROCK 5B+, DeepX NPU and Raspberry Pi with LoRaWAN, MQTT, Modbus, BACnet and ESP-NOW.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl-when">Feb 2025 – May 2026</div>
+            <div class="tl-card">
+              <h3>Lead R&amp;D Engineer, IoT &amp; Hardware <span>· Nexus Fish Network</span></h3>
+              <p class="tl-where">Remote / Hybrid</p>
+              <ul>
+                <li>Spearheaded SmartFishAuto™: sensor nodes, automation units and robotic defence systems.</li>
+                <li>Custom 2-layer PCBs with galvanic isolation and solar BMS for 99.9% uptime in saltwater.</li>
+                <li>Non-blocking FreeRTOS firmware polling 8+ parameters; Oxygen-Demand logic cut energy use by ~25%.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl-when">Nov 2025 – Jan 2026</div>
+            <div class="tl-card">
+              <h3>Senior IoT Engineer <span>· Enerzyz</span></h3>
+              <p class="tl-where">Remote · Contract</p>
+              <ul>
+                <li>IIoT architecture bridging ESP32 and Orange Pi gateways to industrial controllers over Modbus and BACnet.</li>
+                <li>Python MQTT backends with InfluxDB and PostgreSQL; secure remote device management over SSH and cron.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl-when">Nov 2023 – Jan 2025</div>
+            <div class="tl-card">
+              <h3>IoT Engineer <span>· Padma Smart Technology Ltd</span></h3>
+              <p class="tl-where">Dhaka</p>
+              <ul>
+                <li>Led LoRaWAN integration for the Chattogram WASA smart water metering government project.</li>
+                <li>Deep-sleep and clock optimisation extended field sensor battery life by 40%; hosted secure MQTT brokers on Linux VPS.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl-when">Apr 2023 – Oct 2023</div>
+            <div class="tl-card">
+              <h3>Embedded Systems Engineer <span>· Grit Technologies Limited</span></h3>
+              <p class="tl-where">Dhaka</p>
+              <ul>
+                <li>Deployed predictive-maintenance vibration and temperature nodes for British American Tobacco.</li>
+                <li>Debugged RS-485 timing with an oscilloscope to keep data clean in high-EMI plants.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <div class="tl-when">Dec 2021 – Present</div>
+            <div class="tl-card">
+              <h3>Freelance IoT Developer <span>· IoTWithRamim</span></h3>
+              <p class="tl-where">International</p>
+              <ul>
+                <li>OEE tracking systems for the garment industry; landslide early warning for a UN/NGO project.</li>
+                <li>Rapid MVP apps in MIT App Inventor for client demos and field tests.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">05 · Skills</p>
+          <h2>The toolbox</h2>
+        </header>
+        <div class="skill-grid">
+          <div class="skill reveal">
+            <h3><svg class="ico"><use href="#i-chip"/></svg>Microcontrollers &amp; SBCs</h3>
+            <ul class="chips"><li>ESP32 S2/S3/C3</li><li>ESP8266</li><li>STM32</li><li>Arduino</li><li>Raspberry Pi</li><li>Orange Pi</li><li>Radxa ROCK 5B+</li><li>DeepX NPU</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3><svg class="ico"><use href="#i-code"/></svg>Firmware &amp; OS</h3>
+            <ul class="chips"><li>Embedded C/C++</li><li>FreeRTOS</li><li>Bare metal</li><li>ISRs</li><li>MicroPython</li><li>Python</li><li>Linux</li><li>Bash</li><li>PlatformIO</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3><svg class="ico"><use href="#i-radio"/></svg>Protocols</h3>
+            <ul class="chips"><li>MQTT</li><li>Modbus RTU/TCP</li><li>RS-485</li><li>BACnet</li><li>LoRaWAN</li><li>ESP-NOW</li><li>BLE</li><li>GSM/GPRS</li><li>I2C · SPI · I2S</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3><svg class="ico"><use href="#i-chip"/></svg>Hardware design</h3>
+            <ul class="chips"><li>EasyEDA PCB</li><li>Galvanic isolation</li><li>Solar BMS</li><li>Snubber circuits</li><li>HV AC control</li><li>Logic analyzer</li><li>Oscilloscope</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3><svg class="ico"><use href="#i-server"/></svg>Data &amp; platforms</h3>
+            <ul class="chips"><li>EMQX</li><li>Mosquitto</li><li>TimescaleDB</li><li>PostgreSQL</li><li>InfluxDB</li><li>Grafana</li><li>Node-RED</li><li>Node.js · TypeScript</li><li>Next.js</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3><svg class="ico"><use href="#i-lock"/></svg>DevOps &amp; security</h3>
+            <ul class="chips"><li>Docker</li><li>AWS</li><li>SSH</li><li>Git · GitHub</li><li>Row-level security</li><li>Per-tenant ACLs</li><li>OTA updates</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MILESTONES & EDUCATION -->
+    <section class="section section-alt" id="milestones">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">06 · Milestones &amp; education</p>
+          <h2>On stage and in the classroom</h2>
+        </header>
+        <div class="mile-grid">
+          <article class="mile reveal">
+            <span class="mile-ico"><svg class="ico"><use href="#i-award"/></svg></span>
+            <p class="mile-date">12 – 14 Sep 2026 · Novotheatre, Dhaka</p>
+            <h3>Bangladesh Innovation Fair 2026</h3>
+            <p>Debuted an indigenous industrial IoT ecosystem at the SmartData pavilion, and personally walked Dr. Zubaida Rahman through how homegrown Edge AI and IoT can scale from one smart farm to a smart city.</p>
+          </article>
+          <article class="mile reveal">
+            <span class="mile-ico"><svg class="ico"><use href="#i-award"/></svg></span>
+            <p class="mile-date">17 – 19 Sep 2026 · ICCB Hall 4, B-04</p>
+            <h3>International Security Expo 2026</h3>
+            <p>Showcased security-focused IoT integrations for SmartData Technologies.</p>
+          </article>
+          <article class="mile reveal">
+            <span class="mile-ico"><svg class="ico"><use href="#i-cap"/></svg></span>
+            <p class="mile-date">2022 · CGPA 3.56 / 4.00</p>
+            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+            <p>University of Creative Technology, Chittagong. Thesis on smart farm management with IoT and image processing.</p>
+          </article>
+          <article class="mile reveal">
+            <span class="mile-ico"><svg class="ico"><use href="#i-cap"/></svg></span>
+            <p class="mile-date">2016</p>
+            <h3>Diploma in Computer Science &amp; Engineering</h3>
+            <p>Shyamoli Ideal Polytechnic Institute, Chittagong.</p>
+          </article>
+        </div>
+        <ul class="certs reveal" aria-label="Certifications">
+          <li><svg class="ico"><use href="#i-check"/></svg>Industrial IoT Attachment · bdtask Limited (6 months)</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>IoT &amp; Embedded Systems Training · ICT Division (LICT)</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Web Application Development (ASP.NET / C#) · Beacon IT</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">07 · Contact</p>
+            <h2>Have a sensor, a site or a system to connect?</h2>
+            <p class="lead">I'm open to IoT, embedded and edge-platform roles and collaborations, including relocation. The fastest way to reach me is e-mail.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="mailto:ramim.cse.uctc@gmail.com"><svg class="ico"><use href="#i-mail"/></svg> Send an e-mail</a>
+              <button class="btn btn-ghost" type="button" id="copy-email" data-email="ramim.cse.uctc@gmail.com"><svg class="ico"><use href="#i-copy"/></svg> <span>Copy address</span></button>
+            </div>
+          </div>
+          <ul class="contact-list">
+            <li><a href="mailto:ramim.cse.uctc@gmail.com"><span class="cl-ico"><svg class="ico"><use href="#i-mail"/></svg></span><span><small>E-mail</small>ramim.cse.uctc@gmail.com</span></a></li>
+            <li><a href="tel:+8801836655063"><span class="cl-ico"><svg class="ico"><use href="#i-phone"/></svg></span><span><small>Phone</small>+880 1836-655063</span></a></li>
+            <li><a href="https://linkedin.com/in/ramim256" target="_blank" rel="noopener"><span class="cl-ico"><svg class="ico"><use href="#i-linkedin"/></svg></span><span><small>LinkedIn</small>linkedin.com/in/ramim256</span></a></li>
+            <li><a href="https://sites.google.com/view/ramim-iot" target="_blank" rel="noopener"><span class="cl-ico"><svg class="ico"><use href="#i-external"/></svg></span><span><small>Case studies</small>sites.google.com/view/ramim-iot</span></a></li>
+            <li><a href="https://github.com/RamimIoT" target="_blank" rel="noopener"><span class="cl-ico"><svg class="ico"><use href="#i-github"/></svg></span><span><small>GitHub</small>github.com/RamimIoT</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag">Designed and built in Bangladesh. <a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

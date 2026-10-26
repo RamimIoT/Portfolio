@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · IoTWithRamim</title>
+  <meta name="description" content="This page could not be found. Head back to the portfolio of Sakiul Mowla Ramim, Lead IoT Engineer.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="https://ramimiot.github.io/Portfolio/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070b14; --surface: #0f172a; --line: rgba(148,163,184,.16); --grid: rgba(148,163,184,.06);
+      --text: #e6edf7; --text-2: #b4c0d3; --muted: #8291a8;
+      --accent: #22d3ee; --accent-2: #34d399; --accent-3: #818cf8; --warn: #fbbf24; --ink: #04222a;
+      --glow: rgba(34,211,238,.18);
+      color-scheme: dark;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f9fc; --surface: #ffffff; --line: rgba(15,23,42,.12); --grid: rgba(15,23,42,.05);
+        --text: #0b1324; --text-2: #334155; --muted: #5b6b82;
+        --accent: #0891b2; --accent-2: #059669; --accent-3: #4f46e5; --warn: #b45309; --ink: #ffffff;
+        --glow: rgba(8,145,178,.14);
+        color-scheme: light;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+    body {
+      min-height: 100vh; min-height: 100dvh;
+      display: grid; place-items: center; padding: 32px 16px;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(600px 400px at 80% -10%, var(--glow), transparent 70%),
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: auto, 44px 44px, 44px 44px;
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    main { width: 100%; max-width: 560px; text-align: center; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text-2); text-decoration: none; font-weight: 500; }
+    .brand strong { color: var(--text); font-weight: 700; }
+    .mark {
+      display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px;
+      background: linear-gradient(135deg, #22d3ee, #34d399); color: #04222a;
+      font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: .95rem; letter-spacing: .02em;
+    }
+    .code {
+      margin-top: 40px;
+      font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; font-weight: 700;
+      font-size: clamp(5rem, 26vw, 9rem); line-height: 1; letter-spacing: -.04em;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    h1 { margin-top: 12px; font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; font-size: clamp(1.5rem, 6vw, 2rem); line-height: 1.2; }
+    p.lead { margin-top: 12px; color: var(--text-2); }
+    .console {
+      margin: 28px auto 0; padding: 14px 16px; text-align: left;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+      font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace; font-size: .82rem;
+      color: var(--muted); overflow-wrap: anywhere;
+    }
+    .console .ok { color: var(--accent-2); }
+    .console .warn { color: var(--warn); }
+    .console .key { color: var(--accent-3); }
+    .actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 44px; padding: 10px 20px; border-radius: 10px;
+      font-weight: 600; text-decoration: none; transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--ink); }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 24px -12px var(--accent); }
+    .btn-ghost { border: 1px solid var(--line); color: var(--text); background: var(--surface); }
+    .btn-ghost:hover { border-color: var(--accent); }
+    .btn:focus-visible, .brand:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (max-width: 400px) { .btn { width: 100%; } }
+    @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn-primary:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="https://ramimiot.github.io/Portfolio/" aria-label="IoTWithRamim, home">
+      <span class="mark" aria-hidden="true">SR</span>
+      <span>IoTWith<strong>Ramim</strong></span>
+    </a>
+    <div class="code" aria-hidden="true">404</div>
+    <h1>Page not found</h1>
+    <p class="lead">This node didn't answer. The page may have moved, or the link might be mistyped.</p>
+    <div class="console" role="note" aria-label="Diagnostic">
+      <div><span class="key">GET</span> <span id="path">/unknown</span></div>
+      <div><span class="warn">&gt; status: 404 · no route to resource</span></div>
+      <div><span class="ok">&gt; fallback: route home available below</span></div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://ramimiot.github.io/Portfolio/">Back to portfolio</a>
+      <a class="btn btn-ghost" href="https://ramimiot.github.io/Portfolio/#projects">See projects</a>
+    </div>
+  </main>
+  <script>
+    try { document.getElementById('path').textContent = location.pathname || '/'; } catch (e) {}
+  </script>
+</body>
+</html>
