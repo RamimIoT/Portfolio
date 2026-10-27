@@ -7,7 +7,8 @@
   <meta name="description" content="This page could not be found. Head back to the portfolio of Sakiul Mowla Ramim, Lead IoT Engineer.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#070b14">
-  <link rel="icon" href="https://ramimiot.github.io/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="https://ramimiot.github.io/assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="https://ramimiot.github.io/assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -37,11 +38,7 @@
     main { width: 100%; max-width: 560px; text-align: center; }
     .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text-2); text-decoration: none; font-weight: 500; }
     .brand strong { color: var(--text); font-weight: 700; }
-    .mark {
-      display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px;
-      background: linear-gradient(135deg, #22d3ee, #34d399); color: #04222a;
-      font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: .95rem; letter-spacing: .02em;
-    }
+    .mark { display: block; width: 52px; height: 52px; object-fit: contain; }
     .code {
       margin-top: 40px;
       font-family: "Space Grotesk", "Segoe UI", Arial, sans-serif; font-weight: 700;
@@ -78,7 +75,7 @@
 <body>
   <main>
     <a class="brand" href="https://ramimiot.github.io/" aria-label="IoTWithRamim, home">
-      <span class="mark" aria-hidden="true">SR</span>
+      <img class="mark" src="https://ramimiot.github.io/assets/img/logo-256.png" width="52" height="52" alt="" aria-hidden="true">
       <span>IoTWith<strong>Ramim</strong></span>
     </a>
     <div class="code" aria-hidden="true">404</div>
@@ -95,7 +92,14 @@
     </div>
   </main>
   <script>
-    try { document.getElementById('path').textContent = location.pathname || '/'; } catch (e) {}
+    (function () {
+      var p = location.pathname;
+      if (/^\/portfolio(\/|$)/i.test(p)) {
+        location.replace('/' + p.replace(/^\/portfolio\/?/i, '') + location.search + location.hash);
+        return;
+      }
+      try { document.getElementById('path').textContent = p || '/'; } catch (e) {}
+    })();
   </script>
 </body>
 </html>

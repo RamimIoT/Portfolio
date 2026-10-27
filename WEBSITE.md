@@ -28,7 +28,9 @@ Portfolio/
     ├── js/
     │   └── main.js                 # Theme toggle, nav, project filters, simulated telemetry
     └── img/
-        ├── favicon.svg             # "SR" brand mark
+        ├── logo-256.png            # IoTWithRamim logo (header, 404 page)
+        ├── favicon-64.png          # browser-tab icon
+        ├── apple-touch-icon.png    # home-screen icon (iOS)
         └── og-image.png            # 1200x630 social preview image
 ```
 
@@ -69,7 +71,8 @@ Keep asset links in `index.html`
   download buttons keep working.
 - **Theme colours:** the palette is defined as CSS variables at the top of `assets/css/style.css`
   (`:root[data-theme="dark"]` and `:root[data-theme="light"]`), for example `--accent`, `--accent-2`, `--bg`.
-- **Social preview / favicon:** `assets/img/og-image.png` (1200x630) and `assets/img/favicon.svg`.
+- **Social preview / favicon:** `assets/img/og-image.png` (1200x630), `assets/img/favicon-64.png` and `assets/img/apple-touch-icon.png`.
+- **Old address:** `Portfolio/index.html` redirects https://ramimiot.github.io/Portfolio/ to the root, and `404.html` forwards any other old `/Portfolio/...` link.
 
 ### Adding a project card
 
