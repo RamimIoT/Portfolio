@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ramimiot.github.io/Portfolio/sitemap.xml
+Sitemap: https://ramimiot.github.io/sitemap.xml

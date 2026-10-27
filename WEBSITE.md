@@ -4,7 +4,7 @@ Personal portfolio of **Sakiul Mowla Ramim**, Lead IoT Engineer (brand: IoTWithR
 It covers edge hardware, FreeRTOS firmware, industrial protocols and multi-tenant IoT platforms
 across aquaculture, utilities, energy, agriculture and industry.
 
-**Live site:** https://ramimiot.github.io/Portfolio/
+**Live site:** https://ramimiot.github.io/
 
 It is a plain static site (HTML, CSS and vanilla JavaScript, no build step), hosted on GitHub Pages.
 
@@ -50,16 +50,16 @@ git init
 git add .
 git commit -m "Initial portfolio"
 git branch -M main
-git remote add origin https://github.com/RamimIoT/Portfolio.git
+git remote add origin https://github.com/RamimIoT/RamimIoT.github.io.git
 git push -u origin main
 ```
 
 Then on GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
 choose branch **`main`** and folder **`/ (root)`**, and save.
-The site appears at https://ramimiot.github.io/Portfolio/ within a minute or two.
+The site appears at https://ramimiot.github.io/ within a minute or two.
 Later updates go live automatically after each `git push`.
 
-Because the site is served from a sub-path (`/Portfolio/`), keep asset links in `index.html`
+Keep asset links in `index.html`
 **relative** (for example `assets/css/style.css`, not `/assets/css/style.css`).
 
 ## Editing content
@@ -100,10 +100,10 @@ In `index.html`, find the `<ul class="project-grid" id="project-grid">` list, co
 
 A card can belong to several categories by separating them with a space, e.g. `data-cat="city safety"`.
 
-## If the repository is renamed
+## Repository name and URL
 
-If the repo is ever renamed to `RamimIoT.github.io`, the site moves to the root URL
-`https://ramimiot.github.io/`. Update every absolute URL that contains `/Portfolio/`:
+The repo is named `RamimIoT.github.io`, so GitHub Pages serves it from the root URL
+`https://ramimiot.github.io/`. If the repo is ever renamed again, update every absolute URL:
 
 - `index.html`: canonical link, `og:url`, `og:image` and the JSON-LD `url`
 - `404.html`: home links and favicon URL
