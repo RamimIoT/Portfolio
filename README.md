@@ -1,7 +1,7 @@
 # SAKIUL MOWLA RAMIM
 **Embedded Systems & IoT Engineer**  
 Chittagong, Bangladesh | [+880 1836-655063](tel:+8801836655063) | ramim.cse.uctc@gmail.com  
-[LinkedIn: linkedin.com/in/ramim256](https://linkedin.com/in/ramim256)   | [Portfolio: sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot)
+[LinkedIn: linkedin.com/in/ramim256](https://linkedin.com/in/ramim256)   | [Portfolio: ramimiot.github.io](https://ramimiot.github.io/)
 
 ---
 
@@ -71,8 +71,8 @@ Performance-driven **IoT Engineer** with over 4 years of experience architecting
 **B.Sc. in Computer Science & Engineering**
 *University of Creative Technology, Chittagong (UCTC)* | *2022*
 * **CGPA:** 3.56 / 4.00
-* **Thesis:** [Smart Agriculture Farm Management System using IoT and Image Processing](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)
-* **Industrial Attachment:** [Real-time Water Logging Monitoring and Alert with Computer Vision and IoT](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)
+* **Thesis:** [Smart Agriculture Farm Management System using IoT and Image Processing](https://ramimiot.github.io/projects/smart-farm-thesis/)
+* **Industrial Attachment:** [Real-time Water Logging Monitoring and Alert with Computer Vision and IoT](https://ramimiot.github.io/projects/water-logging-cv/)
 
 **Diploma in Computer Science & Engineering**
 *Shyamoli Ideal Polytechnic Institute, Chittagong* | *2016*
@@ -89,41 +89,41 @@ Performance-driven **IoT Engineer** with over 4 years of experience architecting
 
 
 ### **NOTABLE PROJECTS**
-*Full case studies available at: [sites.google.com/view/ramim-iot](https://sites.google.com/view/ramim-iot/about)*
+*Full case studies available at: [ramimiot.github.io](https://ramimiot.github.io/#projects)*
  
-* **[Smart Aquaculture Ecosystem (Full Case Study)](https://sites.google.com/view/ramim-iot/Aquaculture)**
+* **[Smart Aquaculture Ecosystem (Full Case Study)](https://ramimiot.github.io/projects/aquaculture/)**
     * *Role:* Lead Architect. A unified IIoT ecosystem integrating Sensing, Automation, and Robotics.
-* **[Industrial Multi-Parameter Water Monitor (NFN-SEN)](https://sites.google.com/view/ramim-iot/NFN-SEN)**
+* **[Industrial Multi-Parameter Water Monitor (NFN-SEN)](https://ramimiot.github.io/projects/nfn-sen/)**
     * *Tech:* ESP32, RS485 Sensors, Solar BMS, Galvanic Isolation.
     * *Impact:* Replaced manual testing with 24/7 telemetry for DO, pH, Turbidity, and Ammonia.
-* **[Smart Automation Control Unit (NFN-SW)](https://sites.google.com/view/ramim-iot/NFN-SW)**
+* **[Smart Automation Control Unit (NFN-SW)](https://ramimiot.github.io/projects/nfn-sw/)**
     * *Tech:* High-Voltage AC Control, Snubber Circuits, AI Logic.
     * *Impact:* Reduced energy costs by 25% via "Oxygen-Demand" aeration control.
-* **[Autonomous Laser Predator Defense (NFN-LR)](https://sites.google.com/view/ramim-iot/NFN-LR)**
+* **[Autonomous Laser Predator Defense (NFN-LR)](https://ramimiot.github.io/projects/nfn-lr/)**
     * *Tech:* Robotics, Stepper Motors, Randomized Algorithms.
     * *Impact:* Humane, autonomous bird deterrence for large-scale fish farms.
-* **[Smart Industrial Production Monitor (IIoT)](https://sites.google.com/view/ramim-iot/Production-Monitor)**
+* **[Smart Industrial Production Monitor (IIoT)](https://ramimiot.github.io/projects/production-monitor/)**
     * *Tech:* ESP32, TFT Touchscreen, I2S Audio, SD Logging.
     * *Impact:* Real-time OEE tracking with audio feedback for Garment Industry (RMG).
 
-* **[Predictive Maintenance for British American Tobacco](https://sites.google.com/view/ramim-iot/predictive-maintenance-solutions-for-british-american-tobacco-bangladesh)**
+* **[Predictive Maintenance for British American Tobacco](https://ramimiot.github.io/projects/predictive-maintenance-bat/)**
     * *Tech:* Industrial Vibration/Temp Sensors, Modbus.
     * *Impact:* Predictive failure analysis for high-value industrial motors.
-* **[Landslide Warning System (UN/Rohingya Camp)](https://sites.google.com/view/ramim-iot/heavy-rain-warning-and-monitoring-device-to-prevent-landslides)**
+* **[Landslide Warning System (UN/Rohingya Camp)](https://ramimiot.github.io/projects/landslide-warning/)**
     * *Tech:* Remote Telemetry, Soil Moisture Analysis.
     * *Impact:* Early warning system for heavy rain and landslides in vulnerable refugee zones.
 * **Smart Water Metering (WASA Project):** Long-range billing system using LoRaWAN Gateways and End-Devices.
-* **[Real-Time Multi-Sensor Vehicle Monitoring](https://sites.google.com/view/ramim-iot/advanced-vehicle-safety-and-emergency-response-solution):** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
+* **[Real-Time Multi-Sensor Vehicle Monitoring](https://ramimiot.github.io/projects/vehicle-safety/):** Accident detection, fire/fuel leakage alerts, and location-based emergency notifications.
 
-* **[Smart Agriculture Farm Management (Thesis)](https://sites.google.com/view/ramim-iot/smart-agriculture-farm-management-system-using-iot-and-image-processing)**
+* **[Smart Agriculture Farm Management (Thesis)](https://ramimiot.github.io/projects/smart-farm-thesis/)**
     * *Tech:* IoT, Image Processing, Python. Automated irrigation and crop disease detection.
-* **[Real-time Water Logging Monitoring (Industrial Attachment)](https://sites.google.com/view/ramim-iot/real-time-water-logging-monitoring-and-alert-with-computer-vision-and-iot)**
+* **[Real-time Water Logging Monitoring (Industrial Attachment)](https://ramimiot.github.io/projects/water-logging-cv/)**
     * *Tech:* Computer Vision, IoT. City-wide water level detection using street cameras.
-* **[Cow Health Monitoring System (OTA Enabled)](https://sites.google.com/view/ramim-iot/cow-health-monitoring-and-alert-system-using-iot)**
+* **[Cow Health Monitoring System (OTA Enabled)](https://ramimiot.github.io/projects/cow-health/)**
     * *Tech:* Wearable IoT, OTA Updates. Real-time livestock tracking and vital signs monitoring.
-* **IoT Security Bot:** Autonomous ESP32-CAM robot with Telegram integration for intruder alerts.
-* **Smart Traffic & Street Light Management:** Energy-efficient adaptive lighting based on traffic density.
-* **Remote Patient Health Monitoring:** Real-time telemetry of vital signs (ECG, SpO2, Temp).
-* **Indoor Fire Fighting System:** Automated suppression system linked to Arduino IoT Cloud.
-* **Environmental Gas Neutralizer:** Toxic gas detection with automated ventilation triggers.
-* **Real-Time Flood Alert System:** Ultrasonic water level monitoring for flood-prone zones.
+* **[IoT Security Bot](https://ramimiot.github.io/projects/security-bot/):** Autonomous ESP32-CAM robot with Telegram integration for intruder alerts.
+* **[Smart Traffic & Street Light Management](https://ramimiot.github.io/projects/traffic-street-light/):** Energy-efficient adaptive lighting based on traffic density.
+* **[Remote Patient Health Monitoring](https://ramimiot.github.io/projects/patient-health/):** Real-time telemetry of vital signs (ECG, SpO2, Temp).
+* **[Indoor Fire Fighting System](https://ramimiot.github.io/projects/indoor-fire-fighter/):** Automated suppression system linked to Arduino IoT Cloud.
+* **[Environmental Gas Neutralizer](https://ramimiot.github.io/projects/env-wind-gas-neutralizer/):** Toxic gas detection with automated ventilation triggers.
+* **[Real-Time Flood Alert System](https://ramimiot.github.io/projects/flood-detection/):** Ultrasonic water level monitoring for flood-prone zones.
