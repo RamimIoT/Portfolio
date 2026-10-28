@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFN Switching Unit (SW) · Sakiul Mowla Ramim</title>
+  <meta name="description" content="ESP32 8-channel IoT actuator that switches aerators, feeders and pumps on fish farms from cloud logic over MQTT, with sub-200 ms triggering and OTA updates.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/nfn-sw/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="NFN Switching Unit (SW) · Sakiul Mowla Ramim">
+  <meta property="og:description" content="ESP32 8-channel IoT actuator that switches aerators, feeders and pumps on fish farms from cloud logic over MQTT, with sub-200 ms triggering and OTA updates.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/nfn-sw/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "NFN Switching Unit (SW)",
+    "description": "ESP32 8-channel IoT actuator that switches aerators, feeders and pumps on fish farms from cloud logic over MQTT, with sub-200 ms triggering and OTA updates.",
+    "url": "https://ramimiot.github.io/projects/nfn-sw/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Aquaculture</p>
+        <h1>NFN Switching Unit (SW)</h1>
+        <p class="lead">The "hands" of the Smart Aquaculture Ecosystem. While the sensor unit gathers data, the <strong>NFN Switching Unit</strong> acts on it: a cloud-connected, 8-channel actuator that automates paddle-wheel and air-pump aerators, automatic feeders and water management.</p>
+        <dl class="pj-facts"><div><dt>Client</dt><dd>Nexus Fish Network (NFN)</dd></div><div><dt>Role</dt><dd>Lead R&amp;D Engineer (IoT &amp; Hardware)</dd></div><div><dt>Type</dt><dd>Industrial automation hub / IoT actuator</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>8-channel relay</li><li>MQTT</li><li>Wi-Fi</li><li>DHT22</li><li>OTA updates</li><li>12 V DC</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The NFN Switching Unit replaces manual switchboards on the farm. It turns the ecosystem's algorithmic decisions into physical actions on high-load equipment: paddle-wheel aerators, air-pump and diffuser aerators, automatic feeders and water-management pumps. The result is lower energy consumption and a fast response to critical water-quality events.</p>
+<p>It works alongside the <a href="../nfn-sen/">NFN-SEN sensor unit</a> as part of the <a href="../aquaculture/">Smart Aquaculture Ecosystem</a>.</p>
+
+<h2>Hardware architecture</h2>
+<p>The unit is built for the harsh electrical environment of agricultural sites while keeping precise digital control.</p>
+<ul class="pj-list">
+<li><strong>Microcontroller:</strong> dual-core ESP32 running the Wi-Fi and MQTT stacks and the control logic.</li>
+<li><strong>Actuation:</strong> an 8-channel relay module that switches AC loads, so a single unit can manage several aerators and feeders at once.</li>
+<li><strong>Power:</strong> a stable 12&nbsp;V 2&nbsp;A DC adapter that supplies enough current for simultaneous relay-coil activation without voltage sag.</li>
+<li><strong>Connectivity:</strong> MQTT over Wi-Fi, triggering devices from the cloud in under 200&nbsp;ms.</li>
+</ul>
+<ul class="metrics">
+<li><strong>8</strong><span>relay channels per unit</span></li>
+<li><strong>&lt;200 ms</strong><span>cloud-to-relay triggering</span></li>
+<li><strong>12 V 2 A</strong><span>DC supply</span></li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="NFN-SW switching unit" loading="lazy" decoding="async"><figcaption>NFN-SW switching unit</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>Operational logic: AI-driven automation</h2>
+<p>Instead of running on fixed timers, the SW unit follows dynamic logic driven by data from the ecosystem's sensor nodes.</p>
+<h3>Scenario 1: oxygen automation (energy saving)</h3>
+<ol class="pj-list">
+<li>The SEN unit detects dissolved oxygen (DO) falling below a critical threshold, for example 4&nbsp;mg/L.</li>
+<li>The server analyses the water dynamics and sends a command to the SW unit.</li>
+<li>The SW unit switches on the aerator relays immediately, and switches them off once DO has normalised, avoiding wasted energy.</li>
+</ol>
+<h3>Scenario 2: precision feeding</h3>
+<ol class="pj-list">
+<li>The cloud schedule or an AI growth model determines the best feeding times.</li>
+<li>The SW unit runs the feeder motors for precise durations, minimising feed waste and water pollution.</li>
+</ol>
+<h3>Scenario 3: smart water-level maintenance (inlet control)</h3>
+<ol class="pj-list">
+<li>The ultrasonic water-level sensor on the SEN unit detects that the pond level has dropped below the preset threshold, for example through evaporation or seepage.</li>
+<li>The server verifies the reading and sends a "refill" command over MQTT.</li>
+<li>The SW unit switches on the inlet pump and fills the pond until the target level is reached, preventing water stress on the fish.</li>
+</ol>
+<h3>Scenario 4: automated quality flush (outlet and inlet sync)</h3>
+<ol class="pj-list">
+<li>The SEN unit reports critical levels of toxic ammonia (NH3) or high turbidity that aeration alone cannot fix.</li>
+<li>The AI logic starts a water-exchange protocol.</li>
+<li><strong>Drain phase:</strong> the SW unit runs the outlet pump to discharge the dirty bottom layer of water.</li>
+<li><strong>Refill phase:</strong> when the level reaches a safety limit, it stops the outlet pump and starts the inlet pump to bring in fresh water and restore balance.</li>
+</ol>
+<div class="pj-callout"><p>These logic cycles are fully configurable from the mobile app, so farmers can set their own thresholds for pump activation.</p></div>
+
+<h2>Reliability and maintenance features</h2>
+<ul class="checks">
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Internal climate monitoring:</strong> as on the SEN unit, an onboard DHT22 continuously reports the temperature and humidity inside the control box, enabling proactive maintenance if the enclosure overheats or a seal fails.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Unique device addressing:</strong> the firmware generates a unique ID from the ESP32's MAC address, so the server can address and control hundreds of SW units across a large farm without IP conflicts.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Dynamic configuration (OTA):</strong> over-the-air firmware updates and remote reconfiguration through the MQTT API, with no physical access to the device needed.</span></li>
+</ul>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../nfn-sen/"><small>← Previous</small><span>NFN Sensor Unit (SEN v1 &amp; v2)</span></a><a class="next" href="../nfn-lr/"><small>Next →</small><span>NFN Laser Repellent (LR)</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Aquaculture Ecosystem · Sakiul Mowla Ramim</title>
+  <meta name="description" content="End-to-end IoT ecosystem for precision fish farming: ESP32 sensing, switching and laser-repellent units on a unified MQTT API, solar powered and OTA managed.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/aquaculture/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Smart Aquaculture Ecosystem · Sakiul Mowla Ramim">
+  <meta property="og:description" content="End-to-end IoT ecosystem for precision fish farming: ESP32 sensing, switching and laser-repellent units on a unified MQTT API, solar powered and OTA managed.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/aquaculture/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Smart Aquaculture Ecosystem",
+    "description": "End-to-end IoT ecosystem for precision fish farming: ESP32 sensing, switching and laser-repellent units on a unified MQTT API, solar powered and OTA managed.",
+    "url": "https://ramimiot.github.io/projects/aquaculture/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Aquaculture</p>
+        <h1>Smart Aquaculture Ecosystem</h1>
+        <p class="lead">An end-to-end industrial IoT solution for precision fish farming, built for <strong>Nexus Fish Network (NFN)</strong>. Three ESP32-based device families, for <strong>sensing</strong>, <strong>switching</strong> and <strong>laser predator deterrence</strong>, share one MQTT API to keep water quality optimal, cut operating costs and protect the stock.</p>
+        <dl class="pj-facts"><div><dt>Client</dt><dd>Nexus Fish Network (NFN)</dd></div><div><dt>Role</dt><dd>Lead R&amp;D Engineer (IoT &amp; Hardware)</dd></div><div><dt>Type</dt><dd>End-to-end industrial IoT ecosystem</dd></div><div><dt>Status</dt><dd>Deployed &amp; operational</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>MQTT</li><li>Wi-Fi</li><li>LoRaWAN-ready</li><li>Modbus RS-485</li><li>LiFePO4 solar</li><li>MPPT</li><li>OTA updates</li><li>DHT22</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The Smart Aquaculture Ecosystem is a complete IoT solution for modernising traditional fish farming. It connects the biology of the pond to digital automation, keeping water quality optimal, reducing operating costs and protecting aquatic stock.</p>
+<p>The ecosystem is built on a <strong>unified MQTT API architecture</strong>. Three device categories communicate with the cloud through it: <strong>Sensing (SEN)</strong>, <strong>Switching (SW)</strong> and <strong>Laser Repellent (LR)</strong>. Together they cover everything from real-time analytics to automated aeration and predator control.</p>
+
+<h2>System architecture</h2>
+<p>At the core is a scalable identification protocol that gives every device a unique ID derived from its MAC address. All devices run on ESP32 microcontrollers and talk over a custom MQTT structure for low latency and high reliability.</p>
+<ul class="pj-list">
+<li><strong>Connectivity:</strong> MQTT over Wi-Fi, with provision for LoRaWAN gateways.</li>
+<li><strong>Power:</strong> autonomous 12&nbsp;V solar system with LiFePO4 batteries and MPPT charge controllers.</li>
+<li><strong>Fleet management:</strong> over-the-air (OTA) firmware updates and dynamic configuration through the API.</li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Ecosystem architecture" loading="lazy" decoding="async"><figcaption>Ecosystem architecture</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>Hardware evolution and device suite</h2>
+
+<h3>NFN-SEN: sensor nodes</h3>
+<p><em>The eyes of the pond.</em> The sensing unit monitors the critical water parameters: dissolved oxygen (DO), pH, ORP, turbidity, TDS, temperature and water level.</p>
+<ul class="pj-list">
+<li><strong>Version 1.0, the flow-through concept:</strong> hobby-grade analog sensors (DFRobot Gravity series) have a short life when left submerged. An innovative "sampling box" solved this: a 12&nbsp;V pump periodically drew pond water into a test chamber, protecting the sensors from continuous submersion and bio-fouling.</li>
+<li><strong>Version 2.0, the industrial upgrade:</strong> moved DO and pH to industrial RS-485 Modbus sensors, and ORP to a custom interface built from a reverse-engineered analyzer module. The probes can now be submerged directly, removing the pump and greatly improving durability and data precision.</li>
+</ul>
+<p><a href="../nfn-sen/">Read the NFN-SEN case study</a></p>
+
+<h3>NFN-SW: switching units</h3>
+<p><em>The hands of the farm.</em> An 8-channel intelligent control unit that automates heavy AC loads. It replaces manual switching of aerators and auto-feeders, acting on real-time data from the SEN nodes.</p>
+<ul class="pj-list">
+<li><strong>Key feature:</strong> cloud logic triggers oxygenation only when DO levels drop, optimising energy use.</li>
+</ul>
+<p><a href="../nfn-sw/">Read the NFN-SW case study</a></p>
+
+<h3>NFN-LR: laser repellent</h3>
+<p><em>The shield of the farm.</em> An automated predator deterrent that uses computer-controlled lasers to drive off predatory birds without harming the ecosystem.</p>
+<ul class="pj-list">
+<li><strong>Key feature:</strong> a dual-axis (X/Y) pan-tilt mechanism aims a high-power 520&nbsp;nm green laser. Version 1 uses two servo motors; version 2 uses stepper motors.</li>
+</ul>
+<p><a href="../nfn-lr/">Read the NFN-LR case study</a></p>
+<div class="pj-video"><iframe src="https://www.youtube-nocookie.com/embed/mddhIrglAno" title="Smart Aquaculture Ecosystem: laser repellent video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>Shared engineering features</h2>
+<p>All three device families (SEN, SW and LR) follow the same engineering standards for field reliability:</p>
+<ul class="checks">
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Internal health monitoring:</strong> a DHT22 sensor inside every PCB enclosure reports internal temperature and humidity, so overheating or moisture ingress from a failed seal can be diagnosed remotely.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Robust enclosures:</strong> IP65-rated waterproof boxes and "ring buoy" floating structures that stay stable in turbulent water.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Fail-safe power:</strong> dual-power capability, accepting both solar (DC) and grid (AC-to-DC) inputs.</span></li>
+</ul>
+<div class="pj-video"><iframe src="https://www.youtube-nocookie.com/embed/e86iq7K5o5w" title="Smart Aquaculture Ecosystem video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="next" href="../nfn-sen/"><small>Next →</small><span>NFN Sensor Unit (SEN v1 &amp; v2)</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-Time Flood Detection &amp; Alarm System · Sakiul Mowla Ramim</title>
+  <meta name="description" content="Solar-powered ESP32 flood monitor that tracks water level, flow and rain, sounds a buzzer alarm, and alerts users over Wi-Fi or GSM via Arduino IoT Cloud.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/flood-detection/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Real-Time Flood Detection &amp; Alarm System · Sakiul Mowla Ramim">
+  <meta property="og:description" content="Solar-powered ESP32 flood monitor that tracks water level, flow and rain, sounds a buzzer alarm, and alerts users over Wi-Fi or GSM via Arduino IoT Cloud.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/flood-detection/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Real-Time Flood Detection & Alarm System",
+    "description": "Solar-powered ESP32 flood monitor that tracks water level, flow and rain, sounds a buzzer alarm, and alerts users over Wi-Fi or GSM via Arduino IoT Cloud.",
+    "url": "https://ramimiot.github.io/projects/flood-detection/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Utilities &amp; City</p>
+        <h1>Real-Time Flood Detection &amp; Alarm System</h1>
+        <p class="lead">A solar-powered <strong>ESP32</strong> system that watches <strong>water level, water flow, rain, temperature and humidity</strong>, raises a local flood alarm, and sends notifications over <strong>Wi-Fi or GSM</strong>, with remote monitoring and control through <strong>Arduino IoT Cloud</strong>.</p>
+        <dl class="pj-facts"><div><dt>Type</dt><dd>Flood detection &amp; alarm system</dd></div><div><dt>Platform</dt><dd>ESP32 Dev Kit v1, Arduino IoT Cloud</dd></div><div><dt>Status</dt><dd>v1 built for a friend's final project; being extended</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>Arduino IoT Cloud</li><li>Ultrasonic sensor</li><li>Water flow sensor</li><li>Rain sensor</li><li>DHT11</li><li>GSM</li><li>Solar power</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The system monitors the parameters that signal a flood: water level, water flow, rain, temperature and humidity. It sounds an advance flood alarm on site with a buzzer and notifies users over the internet through Wi-Fi or GSM. An Arduino IoT Cloud dashboard provides remote monitoring and control.</p>
+
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Flood detection and alarm system" loading="lazy" decoding="async"><figcaption>Flood detection and alarm system</figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>Features</h2>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Water level:</strong> an ultrasonic sensor measures the water level.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Water flow:</strong> a water flow sensor tracks the flow.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Rain and climate:</strong> a rain sensor detects rain and a DHT11 reads temperature and humidity.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Real-time alarm:</strong> a buzzer broadcasts advance flood alerts on site.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Remote alerts:</strong> notifications go out over Wi-Fi or GSM.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Cloud dashboard:</strong> Arduino IoT Cloud for remote monitoring and control.</span></li>
+</ul>
+
+<h2>Hardware</h2>
+<ul class="pj-list">
+  <li><strong>Microcontroller:</strong> ESP32 Dev Kit v1</li>
+  <li><strong>Sensors:</strong> ultrasonic sensor (water level), water flow sensor, rain sensor, DHT11</li>
+  <li><strong>Outputs:</strong> buzzer alarm, 16x2 LCD for system information</li>
+  <li><strong>Connectivity:</strong> Wi-Fi or GSM</li>
+  <li><strong>Power:</strong> solar panel, power management system and battery backup</li>
+</ul>
+
+<h2>Versions</h2>
+<p>The first version was built for a friend's final project. I have since been updating it with more capabilities and features.</p>
+
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../traffic-street-light/"><small>← Previous</small><span>Energy-Efficient Traffic &amp; Street Light Management</span></a><a class="next" href="../thingspeak-environment/"><small>Next →</small><span>Environment Monitoring &amp; Visualization with ThingSpeak</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

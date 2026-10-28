@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Agriculture Farm Management System (B.Sc. Thesis) · Sakiul Mowla Ramim</title>
+  <meta name="description" content="Solar-powered smart farm system from my B.Sc. thesis: soil, climate and gas sensors, a 24/7 ESP32-CAM, and Auto or Manual control from an Android app.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/smart-farm-thesis/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Smart Agriculture Farm Management System (B.Sc. Thesis) · Sakiul Mowla Ramim">
+  <meta property="og:description" content="Solar-powered smart farm system from my B.Sc. thesis: soil, climate and gas sensors, a 24/7 ESP32-CAM, and Auto or Manual control from an Android app.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/smart-farm-thesis/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Smart Agriculture Farm Management System (B.Sc. Thesis)",
+    "description": "Solar-powered smart farm system from my B.Sc. thesis: soil, climate and gas sensors, a 24/7 ESP32-CAM, and Auto or Manual control from an Android app.",
+    "url": "https://ramimiot.github.io/projects/smart-farm-thesis/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Agriculture</p>
+        <h1>Smart Agriculture Farm Management System (B.Sc. Thesis)</h1>
+        <p class="lead">My B.Sc. thesis project: a <strong>solar-powered</strong> farm management system that combines IoT sensing with image processing. Sensors track the field's conditions, an <strong>ESP32-CAM</strong> watches the farm around the clock, and the whole system is controlled from an <strong>Android app</strong>.</p>
+        <dl class="pj-facts"><div><dt>Context</dt><dd>B.Sc. thesis, Computer Science &amp; Engineering, University of Creative Technology, Chittagong</dd></div><div><dt>Type</dt><dd>Farm monitoring &amp; control</dd></div><div><dt>Power</dt><dd>Solar</dd></div><div><dt>Control</dt><dd>Android app via a real-time database; Auto or Manual mode</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>ESP32-CAM</li><li>Image processing</li><li>Soil moisture sensor</li><li>Temperature &amp;amp; humidity sensor</li><li>Flammable gas sensor</li><li>Real-time database</li><li>Android app</li><li>Solar power</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The system is designed for the effective management of an agricultural farm. Running on solar power, it collects field data from a set of sensors, keeps a camera on the farm 24/7, and can run automatically or be operated manually from a phone.</p>
+
+<h2>What it monitors</h2>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Temperature and humidity:</strong> the climate around the crops.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Soil moisture:</strong> how wet the soil is.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Flammable gas:</strong> detection of flammable gas on the farm.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Camera:</strong> an ESP32-CAM for 24/7 monitoring of the environment, the image-processing side of the system.</span></li>
+</ul>
+
+<h2>Control</h2>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Auto or Manual mode:</strong> the system can run on its own or be operated by hand.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Android app:</strong> monitoring and control from a mobile app, synchronised through a real-time database.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Solar powered:</strong> the whole system runs on solar energy.</span></li>
+</ul>
+
+<h2>Gallery</h2>
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="8"><img src="img/08.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<div class="pj-callout"><p>Block diagrams, flow charts, circuit diagrams and source code are not shared publicly.</p></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../thingspeak-environment/"><small>← Previous</small><span>Environment Monitoring &amp; Visualization with ThingSpeak</span></a><a class="next" href="../smart-irrigation/"><small>Next →</small><span>Smart Irrigation System (ESP32 + Arduino IoT Cloud)</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

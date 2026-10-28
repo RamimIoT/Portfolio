@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Worker Efficiency Monitor · Sakiul Mowla Ramim</title>
+  <meta name="description" content="ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/production-monitor/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Worker Efficiency Monitor · Sakiul Mowla Ramim">
+  <meta property="og:description" content="ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/production-monitor/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Worker Efficiency Monitor",
+    "description": "ESP32 FreeRTOS monitor for garment lines: live target-vs-actual efficiency on a TFT touchscreen, I2S voice alerts, SD logging, MQTT and an Android app.",
+    "url": "https://ramimiot.github.io/projects/production-monitor/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Industrial</p>
+        <h1>Worker Efficiency Monitor</h1>
+        <p class="lead">A smart industrial production monitor (IIoT) for the garment sector. This edge device <strong>gamifies the production floor</strong>: it tracks target vs. actual output in real time, adjusts goals with a carry-over algorithm, and gives workers visual and audio feedback to keep them in the green zone.</p>
+        <dl class="pj-facts"><div><dt>Sector</dt><dd>Manufacturing (garments)</dd></div><div><dt>Role</dt><dd>Senior IoT Engineer (firmware &amp; hardware architect)</dd></div><div><dt>Type</dt><dd>Automated worker efficiency monitor</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>FreeRTOS</li><li>ILI9341 TFT</li><li>PCF8574</li><li>MAX98357A I2S</li><li>SD card</li><li>MQTT</li><li>REST API</li><li>Android</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>The problem</h2>
+<p>In the labour-intensive garment sector, production targets change constantly. Supervisors had no real-time visibility of micro-stoppages, and workers had no immediate feedback on their own performance.</p>
+
+<h2>The solution</h2>
+<p>I engineered an edge-computing IIoT device that turns the production floor into a game. It tracks target vs. actual metrics in real time, adjusts goals dynamically with a carry-over algorithm, and uses visual and audio feedback to keep each worker in the green zone.</p>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Worker Efficiency Monitor" loading="lazy" decoding="async"><figcaption>Worker Efficiency Monitor</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>Hardware</h2>
+<p>The hardware is designed to handle frequent user interaction and data logging at the same time.</p>
+<ul class="pj-list">
+<li><strong>MCU:</strong> dual-core ESP32, chosen for its multi-threading capability.</li>
+<li><strong>Display:</strong> 320×240 TFT touchscreen (ILI9341 driver) rendered at high speed with the TFT_eSPI library.</li>
+<li><strong>Input:</strong> eight physical push buttons on a PCF8574 I2C expander, used for quick increment/decrement of production counts (standing in for machine sensor inputs) and for menu navigation.</li>
+<li><strong>Audio feedback:</strong> MAX98357A I2S DAC amplifier for voice prompts and alerts.</li>
+<li><strong>Storage:</strong> SD card (SPI) for configuration, assets and Excel-compatible CSV logs.</li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Touchscreen interface and push-button input" loading="lazy" decoding="async"><figcaption>Touchscreen interface and push-button input</figcaption></figure>
+<figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>Firmware architecture: FreeRTOS</h2>
+<p>To keep the user experience non-blocking, I structured the firmware as separate FreeRTOS tasks running in parallel.</p>
+<h3>Task orchestration</h3>
+<ul class="pj-list">
+<li><strong>Production task:</strong> the core business logic, stopwatch and shift management.</li>
+<li><strong>Server task:</strong> an asynchronous HTTP web server for API communication.</li>
+<li><strong>GUI task:</strong> dedicated display rendering. Mutex semaphores prevent SPI bus collisions between the display and the SD card.</li>
+</ul>
+<h3>System reliability</h3>
+<ul class="checks">
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Watchdog timer:</strong> the ESP32 task watchdog restarts individual tasks automatically if they hang.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Power-loss recovery:</strong> the running state is written to storage every few seconds, so after a power cut the device resumes exactly where it left off.</span></li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>Software ecosystem and connectivity</h2>
+<p>The system creates a connected floor on a local network architecture, keeping data secure and transmission fast.</p>
+<ul class="pj-list">
+<li><strong>MQTT telemetry:</strong> the device acts as an MQTT client, publishing key production metrics (real-time count, efficiency %, active time) to a local server/broker for central logging.</li>
+<li><strong>REST API:</strong> endpoints allow device telemetry to be queried directly.</li>
+</ul>
+<h3>Mobile application</h3>
+<p>I developed a companion Android app for industrial production engineers (IPEs):</p>
+<ul class="checks">
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Live dashboard:</strong> real-time status of every connected device on the floor.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Data export:</strong> download daily production logs as CSV, directly from a specific device or from the server.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Wireless configuration:</strong> set the standard minute value (SMV) and hourly targets for a line remotely, without physical access.</span></li>
+</ul>
+<div class="pj-video"><iframe src="https://www.youtube-nocookie.com/embed/bQMBFTByCv0" title="Worker Efficiency Monitor demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>Operational workflow</h2>
+<ol class="pj-list">
+<li><strong>Setup:</strong> the line chief sets the daily target and SMV on the touchscreen or wirelessly from the mobile app.</li>
+<li><strong>Operation:</strong> each time the worker finishes a garment, the count goes up, triggered by the physical button or an external sensor.</li>
+<li><strong>Calculation:</strong> the ESP32 calculates real-time efficiency (%) from elapsed time against the adaptive target.</li>
+<li><strong>Feedback (gamification):</strong> on track, the display shows green indicators that reinforce good performance; when the worker falls behind, the I2S audio plays a warning and the display flags the delay in red or orange.</li>
+<li><strong>Reporting:</strong> all data syncs to the server over MQTT, so management can analyse bottlenecks and historical performance.</li>
+</ol>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../nfn-lr/"><small>← Previous</small><span>NFN Laser Repellent (LR)</span></a><a class="next" href="../predictive-maintenance-bat/"><small>Next →</small><span>Predictive Maintenance for British American Tobacco Bangladesh</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

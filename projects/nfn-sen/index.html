@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFN Sensor Unit (SEN v1 &amp; v2) · Sakiul Mowla Ramim</title>
+  <meta name="description" content="Solar-powered floating water-quality profiler for fish ponds: ESP32, RS-485 Modbus and ADS1115 sensing of DO, pH, ORP, turbidity, TDS, temperature and level.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/nfn-sen/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="NFN Sensor Unit (SEN v1 &amp; v2) · Sakiul Mowla Ramim">
+  <meta property="og:description" content="Solar-powered floating water-quality profiler for fish ponds: ESP32, RS-485 Modbus and ADS1115 sensing of DO, pH, ORP, turbidity, TDS, temperature and level.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/nfn-sen/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "NFN Sensor Unit (SEN v1 & v2)",
+    "description": "Solar-powered floating water-quality profiler for fish ponds: ESP32, RS-485 Modbus and ADS1115 sensing of DO, pH, ORP, turbidity, TDS, temperature and level.",
+    "url": "https://ramimiot.github.io/projects/nfn-sen/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Aquaculture</p>
+        <h1>NFN Sensor Unit (SEN v1 &amp; v2)</h1>
+        <p class="lead">The data-acquisition node of the Nexus Fish Network ecosystem: a standalone, <strong>energy-autonomous floating profiler</strong> that continuously monitors critical aquaculture water parameters. Version 1 protected hobby-grade sensors with an active sampling box; version 2 moved to industrial probes with no moving parts.</p>
+        <dl class="pj-facts"><div><dt>Client</dt><dd>Nexus Fish Network (NFN)</dd></div><div><dt>Role</dt><dd>Lead R&amp;D Engineer (IoT &amp; Hardware)</dd></div><div><dt>Type</dt><dd>Floating water-quality profiler</dd></div><div><dt>Versions</dt><dd>SEN v1.0 and v2.0</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>Modbus RS-485</li><li>ADS1115</li><li>DS18B20</li><li>DHT22</li><li>MQTT</li><li>LiFePO4 solar</li><li>BMS</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The NFN SEN unit floats on the pond surface and continuously measures the water parameters that matter in aquaculture. It is built on a "ring buoy" mechanical architecture:</p>
+<ul class="pj-list">
+<li><strong>Structure:</strong> a custom metal chassis mounted on a standard life-saving ring buoy for stability in turbulent water.</li>
+<li><strong>Enclosure:</strong> an IP65-rated waterproof box housing the MCU, the battery management system (BMS) and the signal-processing circuits.</li>
+<li><strong>Power:</strong> fully off-grid, using a 12&nbsp;V solar panel, a 4S LiFePO4 battery pack and a solar charge controller.</li>
+</ul>
+<p>The unit is part of the <a href="../aquaculture/">Smart Aquaculture Ecosystem</a>, where its readings drive the <a href="../nfn-sw/">NFN-SW switching unit</a>.</p>
+
+<h2>SEN v1.0: the active sampling approach</h2>
+<p>The first version worked around the limits of hobby-grade sensors with mechanical ingenuity.</p>
+<h3>The challenge</h3>
+<p>The prototype used DFRobot Gravity analog sensors: DO (SKU SEN0237), pH V2 (SKU SEN0161-V2) and the Analog ORP Pro. Field testing showed that these sensors degraded quickly when continuously submerged, because of bio-fouling and electrolysis.</p>
+<h3>The engineering solution: the sampling box</h3>
+<p>To extend sensor life, I engineered an active sampling system:</p>
+<ul class="pj-list">
+<li><strong>Mechanism:</strong> a secondary plastic reservoir, the sampling box, mounted on the buoy.</li>
+<li><strong>Logic:</strong> a 12&nbsp;V DC pump periodically filled the box with pond water.</li>
+<li><strong>Sensing:</strong> the DO, pH, ORP and turbidity sensors sat inside the box and took readings only when fresh water had been pumped in.</li>
+<li><strong>Direct sensors:</strong> robust sensors stayed deployed in the pond full time: TDS, temperature (DS18B20) and an ultrasonic water-level sensor mounted on a guide pipe.</li>
+<li><strong>ADC interfacing:</strong> dual ADS1115 16-bit ADC modules provided the resolution the analog sensor array needed.</li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="SEN v1.0 with the active sampling box" loading="lazy" decoding="async"><figcaption>SEN v1.0 with the active sampling box</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="SEN v1.0" loading="lazy" decoding="async"><figcaption>SEN v1.0</figcaption></figure>
+</div>
+
+<h2>SEN v2.0: the industrial evolution</h2>
+<p>The current version focuses on durability and precision, and minimises mechanical failure points. It removes the pump system entirely by moving to industrial-grade probes rated for 24/7 submersion.</p>
+<ul class="checks">
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>RS-485 Modbus sensing:</strong> dissolved oxygen and pH moved to industrial RS-485 Modbus sensors, eliminating analog signal noise and the need for frequent recalibration.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Hardware reverse engineering (ORP):</strong> to use a high-quality analog ORP probe cost-effectively, I reverse-engineered a commercial ORP analyzer, extracted its internal signal-conditioning module and interfaced it with the ADS1115 on my custom PCB.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Custom sensor modification:</strong> I waterproofed the electronics of the Gravity analog turbidity sensor so it can be submerged directly in the pond without a sampling chamber.</span></li>
+</ul>
+<div class="pj-callout"><p><strong>Result:</strong> a solid-state system with zero moving parts and no pumps, which significantly reduces maintenance.</p></div>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="SEN v2.0 with industrial probes" loading="lazy" decoding="async"><figcaption>SEN v2.0 with industrial probes</figcaption></figure>
+<figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="SEN v2.0" loading="lazy" decoding="async"><figcaption>SEN v2.0</figcaption></figure>
+</div>
+
+<h2>System intelligence and telemetry</h2>
+<p>Both versions include telemetry for remote troubleshooting.</p>
+<h3>Internal climate monitoring</h3>
+<p>A DHT22 sensor sits directly on the PCB inside the main enclosure and reports the internal temperature and humidity of the waterproof box. Rising humidity warns the engineering team of a possible seal failure (water ingress) before the electronics are damaged.</p>
+<h3>Data transmission</h3>
+<ul class="pj-list">
+<li>The ESP32 aggregates data over three buses: Modbus (RS-485), I2C (ADS1115) and OneWire (temperature).</li>
+<li>Optimised payloads are sent to the cloud over MQTT for real-time visualisation.</li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+<figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>v1.0 vs v2.0 at a glance</h2>
+<div class="pj-table-wrap"><table class="pj-table">
+<thead><tr><th>Area</th><th>SEN v1.0</th><th>SEN v2.0</th></tr></thead>
+<tbody>
+<tr><td>DO and pH</td><td>DFRobot Gravity analog (SEN0237, SEN0161-V2) in sampling box</td><td>Industrial RS-485 Modbus probes, directly submerged</td></tr>
+<tr><td>ORP</td><td>DFRobot Analog ORP Pro in sampling box</td><td>Analog probe with signal conditioning from a reverse-engineered analyzer, via ADS1115</td></tr>
+<tr><td>Turbidity</td><td>Gravity analog sensor in sampling box</td><td>Custom-waterproofed Gravity sensor, directly submerged</td></tr>
+<tr><td>Moving parts</td><td>12&nbsp;V DC sampling pump</td><td>None</td></tr>
+<tr><td>Shared platform</td><td colspan="2">ESP32, ADS1115 16-bit ADC, DHT22 enclosure telemetry, MQTT, 12&nbsp;V solar with 4S LiFePO4 and BMS</td></tr>
+</tbody>
+</table></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../aquaculture/"><small>← Previous</small><span>Smart Aquaculture Ecosystem</span></a><a class="next" href="../nfn-sw/"><small>Next →</small><span>NFN Switching Unit (SW)</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

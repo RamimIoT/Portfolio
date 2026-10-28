@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energy-Efficient Traffic &amp; Street Light Management · Sakiul Mowla Ramim</title>
+  <meta name="description" content="Solar IoT system that dims street lights by road motion, detects faulty lamps, adapts traffic signals to density, and reports via ThingSpeak and a mobile app.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/traffic-street-light/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Energy-Efficient Traffic &amp; Street Light Management · Sakiul Mowla Ramim">
+  <meta property="og:description" content="Solar IoT system that dims street lights by road motion, detects faulty lamps, adapts traffic signals to density, and reports via ThingSpeak and a mobile app.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/traffic-street-light/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Energy-Efficient Traffic & Street Light Management",
+    "description": "Solar IoT system that dims street lights by road motion, detects faulty lamps, adapts traffic signals to density, and reports via ThingSpeak and a mobile app.",
+    "url": "https://ramimiot.github.io/projects/traffic-street-light/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Utilities &amp; City</p>
+        <h1>Energy-Efficient Traffic &amp; Street Light Management</h1>
+        <p class="lead">An IoT system that uses <strong>solar energy</strong> and sensors to <strong>cut street-light energy use</strong>, detect faulty lamps and <strong>switch traffic signals by traffic density</strong>, with remote control from the <strong>Smart Traffic</strong> app and data on <strong>ThingSpeak</strong>.</p>
+        <dl class="pj-facts"><div><dt>Type</dt><dd>Smart street lighting &amp; traffic control</dd></div><div><dt>Platform</dt><dd>ThingSpeak + Smart Traffic mobile app</dd></div><div><dt>Power</dt><dd>Solar energy system</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>IoT</li><li>LDR</li><li>IR motion sensor</li><li>DHT11</li><li>ThingSpeak</li><li>Mobile app</li><li>Solar power</li><li>Current monitoring</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The system uses solar energy and IoT to reduce the energy street lights consume, detect faulty street lights, and automate traffic signals based on traffic density. The goal is better energy efficiency, lower maintenance costs, and a safe, reliable way to manage traffic and street lighting.</p>
+
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Traffic and street light management system" loading="lazy" decoding="async"><figcaption>Traffic and street light management system</figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>How it works</h2>
+<p>A microcontroller processes the sensor data and makes the control decisions. LDR, IR motion and DHT11 sensors provide temperature, humidity, sunlight intensity and street-light intensity.</p>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Automatic street lights:</strong> street lights turn on automatically based on the sensor readings.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Motion-based dimming:</strong> lights dim to save energy depending on motion on the road.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Fault detection:</strong> faulty street lights are detected automatically.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Adaptive traffic signals:</strong> signals change automatically according to traffic density.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Current monitoring:</strong> the system tracks current consumption.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Remote control:</strong> the "Smart Traffic" mobile app and ThingSpeak let the system be monitored, controlled and logged for further analysis from anywhere.</span></li>
+</ul>
+
+<h2>Hardware &amp; stack</h2>
+<ul class="pj-list">
+  <li><strong>Sensors:</strong> LDR, IR motion sensors, DHT11</li>
+  <li><strong>Power:</strong> solar energy system</li>
+  <li><strong>Cloud:</strong> ThingSpeak for data monitoring and storage</li>
+  <li><strong>App:</strong> "Smart Traffic" mobile app</li>
+</ul>
+
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="8"><img src="img/08.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="9"><img src="img/09.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<div class="pj-callout"><p>Block diagrams, circuit diagrams and source code are not shared publicly.</p></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../water-logging-cv/"><small>← Previous</small><span>Water Logging Monitoring with Computer Vision &amp; IoT</span></a><a class="next" href="../flood-detection/"><small>Next →</small><span>Real-Time Flood Detection &amp; Alarm System</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

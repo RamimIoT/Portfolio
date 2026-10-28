@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indoor Fire Fighter System (ESP32 + IoT Cloud) · Sakiul Mowla Ramim</title>
+  <meta name="description" content="ESP32 indoor fire-fighting system: MQ2 gas sensing with exhaust fan, flame sensors, a servo-aimed water pump, buzzer alarm and Arduino IoT Cloud dashboard.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/indoor-fire-fighter/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Indoor Fire Fighter System (ESP32 + IoT Cloud) · Sakiul Mowla Ramim">
+  <meta property="og:description" content="ESP32 indoor fire-fighting system: MQ2 gas sensing with exhaust fan, flame sensors, a servo-aimed water pump, buzzer alarm and Arduino IoT Cloud dashboard.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/indoor-fire-fighter/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Indoor Fire Fighter System (ESP32 + IoT Cloud)",
+    "description": "ESP32 indoor fire-fighting system: MQ2 gas sensing with exhaust fan, flame sensors, a servo-aimed water pump, buzzer alarm and Arduino IoT Cloud dashboard.",
+    "url": "https://ramimiot.github.io/projects/indoor-fire-fighter/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Health &amp; Safety</p>
+        <h1>Indoor Fire Fighter System (ESP32 + IoT Cloud)</h1>
+        <p class="lead">A smart device that <strong>detects and extinguishes indoor fires</strong>. It vents flammable gas, detects flames, aims a water jet at the fire and raises the alarm locally and through the <strong>Arduino IoT Cloud</strong>, all driven by an <strong>ESP32 Dev Kit v1</strong> with battery backup.</p>
+        <dl class="pj-facts"><div><dt>Context</dt><dd>Client project</dd></div><div><dt>Type</dt><dd>Indoor fire detection &amp; suppression</dd></div><div><dt>Platform</dt><dd>ESP32 Dev Kit v1</dd></div><div><dt>Cloud</dt><dd>Arduino IoT Cloud</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32 Dev Kit v1</li><li>MQ2 gas sensor</li><li>Flame sensors</li><li>Water pump</li><li>Servo motor</li><li>DHT11</li><li>16x2 LCD</li><li>Battery backup</li><li>Arduino IoT Cloud</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>How it works</h2>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Gas detection &amp; ventilation:</strong> an MQ2 gas sensor senses flammable gases, and an exhaust fan extracts them.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Flame detection:</strong> two flame sensors detect a fire.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Suppression:</strong> a water pump starts the flow of water, and a servo attached to the pump pipe directs it toward the fire.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Alarm:</strong> a buzzer sounds a fire alarm, and the alert is also sent to users through Arduino IoT Cloud.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Remote dashboard:</strong> users can monitor and control the system from the cloud dashboard.</span></li>
+</ul>
+
+<h2>Hardware</h2>
+<div class="pj-table-wrap"><table class="pj-table">
+  <thead><tr><th>Component</th><th>Role</th></tr></thead>
+  <tbody>
+    <tr><td>ESP32 Dev Kit v1</td><td>Main controller; built-in Wi-Fi connects it to the internet</td></tr>
+    <tr><td>Power management system + battery backup</td><td>Reliable power delivery</td></tr>
+    <tr><td>MQ2 gas sensor</td><td>Flammable gas detection</td></tr>
+    <tr><td>Exhaust fan</td><td>Gas extraction</td></tr>
+    <tr><td>Flame sensors (x2)</td><td>Fire detection</td></tr>
+    <tr><td>Water pump + servo</td><td>Water delivery and aiming</td></tr>
+    <tr><td>Buzzer</td><td>Local fire alarm</td></tr>
+    <tr><td>DHT11</td><td>Temperature and humidity</td></tr>
+    <tr><td>16x2 LCD</td><td>Local information display</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Gallery</h2>
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="6"><img src="img/06.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="7"><img src="img/07.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<div class="pj-callout"><p>Circuit diagrams and source code are confidential to the client.</p></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../security-bot/"><small>← Previous</small><span>IoT Security Bot: ESP32-CAM + Telegram with OTA</span></a><a class="next" href="../env-wind-gas-neutralizer/"><small>Next →</small><span>Environment &amp; Wind Monitor with Toxic Gas Neutralizer</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

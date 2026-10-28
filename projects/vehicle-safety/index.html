@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-Sensor Vehicle Safety &amp; Emergency Response · Sakiul Mowla Ramim</title>
+  <meta name="description" content="ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/vehicle-safety/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Multi-Sensor Vehicle Safety &amp; Emergency Response · Sakiul Mowla Ramim">
+  <meta property="og:description" content="ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/vehicle-safety/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Multi-Sensor Vehicle Safety & Emergency Response",
+    "description": "ESP32 vehicle safety system that detects accidents, fire, gas leaks and temperature extremes, and sends four-level SMS alerts with GPS location over GSM.",
+    "url": "https://ramimiot.github.io/projects/vehicle-safety/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Health &amp; Safety</p>
+        <h1>Multi-Sensor Vehicle Safety &amp; Emergency Response</h1>
+        <p class="lead">A real-time vehicle monitoring system that detects <strong>accidents, fires, fuel leakages and critical temperature variations</strong>, then automatically alerts the right people and emergency services by SMS with the vehicle's GPS location.</p>
+        <dl class="pj-facts"><div><dt>Type</dt><dd>Vehicle safety &amp; emergency response</dd></div><div><dt>Platform</dt><dd>ESP32 with SIM800L GSM and NEO-6M GPS</dd></div><div><dt>Power</dt><dd>Dual 18650 cells, 2S BMS</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>MPU-6050</li><li>MQ-2 gas sensor</li><li>Flame sensor</li><li>DHT11</li><li>NEO-6M GPS</li><li>SIM800L GSM</li><li>SSD1306 OLED</li><li>18650 2S BMS</li><li>mDNS web server</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The system brings several hazard sensors, GPS tracking and GSM communication together in one ESP32-based unit. It watches the vehicle continuously and, depending on how serious an incident is, notifies the driver, traffic control, the fire service and an ambulance, with the location ready to open in Google Maps.</p>
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>System architecture</h2>
+<h3>Hardware</h3>
+<div class="pj-table-wrap"><table class="pj-table">
+  <thead><tr><th>Function</th><th>Component</th></tr></thead>
+  <tbody>
+    <tr><td>Core processing</td><td>ESP32 microcontroller</td></tr>
+    <tr><td>Accident detection</td><td>MPU-6050 6-axis motion-tracking sensor</td></tr>
+    <tr><td>Gas leakage</td><td>MQ-2 gas / air-quality sensor</td></tr>
+    <tr><td>Fire</td><td>Flame sensor</td></tr>
+    <tr><td>Environment</td><td>DHT11 temperature and humidity sensor</td></tr>
+    <tr><td>Location</td><td>NEO-6M GPS module</td></tr>
+    <tr><td>Communication</td><td>SIM800L GSM/GPRS module for emergency SMS</td></tr>
+    <tr><td>Display</td><td>SSD1306 OLED, 128×32, I2C</td></tr>
+    <tr><td>Power</td><td>Two 18650 cells with a 2S BMS; 8.4 V to 5 V 3 A buck converter; TP5100-based charger (12 V to 8.4 V)</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Software: task flow</h3>
+<p>The firmware is organised as a hierarchy of tasks:</p>
+<ol class="pj-list">
+  <li>System and peripheral initialisation</li>
+  <li>Continuous multi-sensor data collection</li>
+  <li>Real-time data processing and analysis</li>
+  <li>Dynamic alert generation</li>
+  <li>Multi-channel notification dispatch</li>
+  <li>Data synchronisation with a local server</li>
+</ol>
+
+<h2>Four-level alert system</h2>
+<p>Alerts escalate with the severity of the incident:</p>
+<div class="pj-table-wrap"><table class="pj-table">
+  <thead><tr><th>Level</th><th>Who is notified</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Personal notification</td></tr>
+    <tr><td>2</td><td>Personal + traffic control</td></tr>
+    <tr><td>3</td><td>Personal + traffic control + fire service</td></tr>
+    <tr><td>4</td><td>Full emergency response: all services + ambulance</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Key features</h2>
+<h3>Accident detection</h3>
+<p>Vibration magnitude is monitored in real time. Crossing a threshold triggers an automatic alert to emergency services with the GPS location.</p>
+<ul class="metrics">
+  <li><strong>&gt;850</strong><span>vibration magnitude: basic accident alert</span></li>
+  <li><strong>&gt;1000</strong><span>vibration magnitude: severe accident alert</span></li>
+  <li><strong>4</strong><span>escalating alert levels</span></li>
+</ul>
+
+<h3>Monitoring and notification</h3>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Gas leakage:</strong> continuous detection with the MQ-2 sensor.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Fire:</strong> flame detection with an immediate emergency response.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Temperature and humidity:</strong> continuous monitoring with real-time data logging.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>SMS alerts with location:</strong> GSM messages carry GPS data formatted for Google Maps, sent at the alert level that matches the incident.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Remote monitoring:</strong> a local web server reachable over mDNS provides real-time data visualisation, system status and remote vehicle control.</span></li>
+</ul>
+
+<h2>Impact</h2>
+<ul class="pj-list">
+  <li>Automated alerts reduce emergency response time.</li>
+  <li>Monitoring several parameters at once improves overall vehicle safety.</li>
+  <li>Sensor fusion improves accident-detection accuracy.</li>
+  <li>Real-time tracking and monitoring of the vehicle.</li>
+</ul>
+
+<h2>Future enhancements</h2>
+<ul class="pj-list">
+  <li>AI-based accident prediction</li>
+  <li>Cloud integration for data analytics</li>
+  <li>A mobile app for remote monitoring</li>
+  <li>Improved power management</li>
+  <li>Integration with smart-city infrastructure</li>
+</ul>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../cow-health/"><small>← Previous</small><span>Cow Health Monitoring &amp; Alert System</span></a><a class="next" href="../patient-health/"><small>Next →</small><span>Patient Health Monitoring &amp; Alert System</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

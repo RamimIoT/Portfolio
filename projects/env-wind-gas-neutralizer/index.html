@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Environment &amp; Wind Monitor with Toxic Gas Neutralizer · Sakiul Mowla Ramim</title>
+  <meta name="description" content="Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/env-wind-gas-neutralizer/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Environment &amp; Wind Monitor with Toxic Gas Neutralizer · Sakiul Mowla Ramim">
+  <meta property="og:description" content="Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/env-wind-gas-neutralizer/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Environment & Wind Monitor with Toxic Gas Neutralizer",
+    "description": "Solar-powered ESP32 station that detects toxic gases like ammonia and chlorine, neutralizes them with a 180-degree servo unit, and monitors wind and weather.",
+    "url": "https://ramimiot.github.io/projects/env-wind-gas-neutralizer/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Health &amp; Safety</p>
+        <h1>Environment &amp; Wind Monitor with Toxic Gas Neutralizer</h1>
+        <p class="lead">A solar-powered <strong>ESP32</strong> station that detects toxic gases such as <strong>ammonia and chlorine</strong> and neutralizes them with a <strong>servo-driven neutralizer</strong>, while monitoring temperature, humidity, sunlight intensity and <strong>wind speed</strong>.</p>
+        <dl class="pj-facts"><div><dt>Type</dt><dd>Environmental monitoring &amp; toxic gas neutralizer</dd></div><div><dt>Platform</dt><dd>ESP32 Dev Kit v1, Wi-Fi</dd></div><div><dt>Power</dt><dd>Solar tracking with battery backup</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>MQ-135</li><li>Wind speed sensor</li><li>DHT11</li><li>Servo</li><li>Solar tracking</li><li>16x2 LCD</li><li>Wi-Fi</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>The system monitors toxic gases such as ammonia and chlorine and neutralizes them, while also tracking environmental conditions: temperature, humidity, sunlight intensity and wind speed. It runs on solar power with a tracking mount and battery backup, so it can operate as a self-contained station.</p>
+
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="Environment and wind speed monitoring station with gas neutralizer" loading="lazy" decoding="async"><figcaption>Environment and wind speed monitoring station with gas neutralizer</figcaption></figure>
+  <figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="3"><img src="img/03.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>How it works</h2>
+<ul class="checks">
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Toxic gas sensing:</strong> an MQ-135 air quality sensor detects ammonia (NH3) and other toxic gases.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Gas neutralizer:</strong> a servo-driven neutralizer with 180-degree movement neutralizes the detected gas.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Weather monitoring:</strong> a wind speed sensor measures wind, a DHT11 reads temperature and humidity, and sunlight intensity is monitored as well.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Local display:</strong> a 16x2 LCD shows system information.</span></li>
+  <li><svg class="ico"><use href="#i-check"/></svg><span><strong>Connectivity:</strong> the ESP32's built-in Wi-Fi connects the system to the internet.</span></li>
+</ul>
+
+<h2>Hardware</h2>
+<ul class="pj-list">
+  <li><strong>Microcontroller:</strong> ESP32 Dev Kit v1 (built-in Wi-Fi)</li>
+  <li><strong>Sensors:</strong> MQ-135 air quality sensor (ammonia), wind speed sensor, DHT11 temperature &amp; humidity sensor</li>
+  <li><strong>Actuator:</strong> toxic gas neutralizer on a servo with 180-degree movement</li>
+  <li><strong>Display:</strong> 16x2 LCD</li>
+  <li><strong>Power:</strong> solar tracking system, power management system and battery backup</li>
+</ul>
+
+<div class="pj-gallery">
+  <figure class="pj-fig" data-img="4"><img src="img/04.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+  <figure class="pj-fig" data-img="5"><img src="img/05.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<div class="pj-callout"><p>Block diagrams, circuit diagrams and source code are confidential to the client.</p></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../indoor-fire-fighter/"><small>← Previous</small><span>Indoor Fire Fighter System (ESP32 + IoT Cloud)</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

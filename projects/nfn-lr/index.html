@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NFN Laser Repellent (LR) · Sakiul Mowla Ramim</title>
+  <meta name="description" content="Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.">
+  <meta name="author" content="Sakiul Mowla Ramim">
+  <meta name="theme-color" content="#070b14">
+  <link rel="canonical" href="https://ramimiot.github.io/projects/nfn-lr/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="NFN Laser Repellent (LR) · Sakiul Mowla Ramim">
+  <meta property="og:description" content="Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.">
+  <meta property="og:url" content="https://ramimiot.github.io/projects/nfn-lr/">
+  <meta property="og:image" content="https://ramimiot.github.io/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../../assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/project.css">
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "NFN Laser Repellent (LR)",
+    "description": "Non-lethal ESP32 laser deterrent for fish farms: a 520 nm green laser on a pan-tilt mount sweeps ponds, with an AI-vision v2 that targets detected birds.",
+    "url": "https://ramimiot.github.io/projects/nfn-lr/",
+    "author": {
+      "@type": "Person",
+      "name": "Sakiul Mowla Ramim",
+      "url": "https://ramimiot.github.io/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="../../" class="brand" aria-label="Sakiul Mowla Ramim, home">
+        <img class="brand-logo" src="../../assets/img/logo-256.png" width="44" height="44" alt="" aria-hidden="true">
+        <span class="brand-text">IoTWith<strong>Ramim</strong></span>
+      </a>
+      <div class="nav-actions pj-actions">
+        <a class="btn btn-sm btn-ghost" href="../../#projects">All projects</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="pj-hero container">
+        <a class="pj-back" href="../../#projects"><svg class="ico"><use href="#i-arrow"/></svg> Back to projects</a>
+        <p class="eyebrow">Aquaculture</p>
+        <h1>NFN Laser Repellent (LR)</h1>
+        <p class="lead">A non-lethal, automated security system that protects open-air fish farms from predatory birds such as cormorants and herons. A <strong>520&nbsp;nm green laser</strong> on a dual-axis pan-tilt mount exploits birds' fear of moving green light to create a "no-fly zone" over the water without harming wildlife.</p>
+        <dl class="pj-facts"><div><dt>Client</dt><dd>Nexus Fish Network (NFN)</dd></div><div><dt>Role</dt><dd>Lead R&amp;D Engineer (IoT &amp; Hardware)</dd></div><div><dt>Type</dt><dd>Automated predator deterrent</dd></div><div><dt>Status</dt><dd>v1.0 standard edition; v2.0 AI-vision prototype in field testing</dd></div></dl>
+        <ul class="chips" aria-label="Technologies"><li>ESP32</li><li>Servo pan-tilt (v1)</li><li>Stepper motors (v2)</li><li>520 nm green laser</li><li>MQTT</li><li>RTSP</li><li>YOLOv8</li><li>DHT22</li></ul>
+      </header>
+
+      <div class="pj-body container">
+        <div class="prose">
+<h2>Overview</h2>
+<p>Netting and other traditional protection methods are expensive and often impractical on large water bodies. The NFN Laser Repellent takes a different approach: it uses the biological fear reflex birds have towards moving green light beams. By simulating a physical threat across the water surface, it keeps predators away without causing them harm.</p>
+<p>The LR unit is the third device family in the <a href="../aquaculture/">Smart Aquaculture Ecosystem</a>, alongside the <a href="../nfn-sen/">NFN-SEN</a> sensor and <a href="../nfn-sw/">NFN-SW</a> switching units.</p>
+
+<h2>LR v1.0: the automated sweeper (standard edition)</h2>
+<p>The foundational version, designed for broad-area coverage using algorithmic patterns.</p>
+<h3>Mechanism</h3>
+<ul class="pj-list">
+<li><strong>Dual-axis control:</strong> two precision servo motors, one for the X axis and one for the Y axis, form a pan-tilt mount with 180° of travel.</li>
+<li><strong>Optics:</strong> a high-power 520&nbsp;nm green laser. Green was chosen for its high visibility in daylight and its effectiveness at startling avian pests.</li>
+</ul>
+<h3>Operational logic</h3>
+<ul class="pj-list">
+<li><strong>Randomised sweeping:</strong> so that birds do not get used to the patterns, the ESP32 firmware runs randomised sweeping algorithms. The laser crosses the pond surface on unpredictable paths for constant deterrence.</li>
+<li><strong>Schedule-based activation:</strong> through the MQTT API the system can be scheduled to run only during peak predation hours (dawn and dusk), saving energy.</li>
+</ul>
+<div class="pj-gallery">
+<figure class="pj-fig" data-img="1"><img src="img/01.jpg" alt="LR v1.0 servo pan-tilt laser unit" loading="lazy" decoding="async"><figcaption>LR v1.0 servo pan-tilt laser unit</figcaption></figure>
+<figure class="pj-fig" data-img="2"><img src="img/02.jpg" alt="Project photo" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+</div>
+
+<h2>LR v2.0: the AI-vision hunter (advanced prototype)</h2>
+<p>Currently in active field testing, v2.0 gives the system sight, turning it from a passive deterrent into an active defender. Where v1.0 sweeps blindly, v2.0 adds real-time video analysis, and its pan-tilt mechanism is driven by stepper motors instead of servos.</p>
+<h3>System workflow</h3>
+<ol class="pj-list">
+<li><strong>Visual input:</strong> the system connects to an on-site CCTV/IP camera over RTSP (Real-Time Streaming Protocol).</li>
+<li><strong>AI detection:</strong> a computer-vision model (for example YOLOv8) running on a local edge server processes the live stream. It is trained to recognise specific predator classes such as "bird" and "heron".</li>
+<li><strong>Target acquisition:</strong> when a predator is detected, the system calculates its coordinates relative to the laser's position.</li>
+<li><strong>Active repulsion:</strong> the system overrides the idle sweeping pattern and drives the stepper motors to point the laser directly at or near the target, which greatly increases the scare factor.</li>
+</ol>
+
+<h2>Shared hardware</h2>
+<p>Both versions share a robust, field-ready hardware architecture:</p>
+<ul class="checks">
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Microcontroller:</strong> ESP32 handling motor control (servos on v1.0, steppers on v2.0) and MQTT communication.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Flexible power:</strong> solar mode on the standard 12&nbsp;V NFN solar system for off-grid sites, or grid mode through an AC-to-DC adapter where electricity is available.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Internal telemetry:</strong> as on the SEN and SW units, a DHT22 on the PCB monitors enclosure temperature so the laser module does not overheat during long operation.</span></li>
+<li><svg class="ico"><use href="#i-check"/></svg><span><strong>Connectivity:</strong> fully integrated into the Nexus Fish Network over MQTT, so users can aim the laser manually or disable it from the mobile app during farm maintenance.</span></li>
+</ul>
+
+<h2>Versions at a glance</h2>
+<div class="pj-table-wrap"><table class="pj-table">
+<thead><tr><th></th><th>LR v1.0</th><th>LR v2.0</th></tr></thead>
+<tbody>
+<tr><td>Status</td><td>Standard edition</td><td>Advanced prototype, in field testing</td></tr>
+<tr><td>Pan-tilt drive</td><td>Two servo motors (X/Y)</td><td>Stepper motors</td></tr>
+<tr><td>Targeting</td><td>Randomised sweeping algorithms, scheduled via MQTT</td><td>RTSP camera feed analysed by a computer-vision model (e.g. YOLOv8) on an edge server; aims at detected birds</td></tr>
+<tr><td>Laser</td><td colspan="2">High-power 520&nbsp;nm green</td></tr>
+</tbody>
+</table></div>
+        </div>
+      </div>
+
+      <nav class="pj-pager container" aria-label="More projects"><a class="prev" href="../nfn-sw/"><small>← Previous</small><span>NFN Switching Unit (SW)</span></a><a class="next" href="../production-monitor/"><small>Next →</small><span>Worker Efficiency Monitor</span></a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Sakiul Mowla Ramim · IoTWithRamim</p>
+      <p class="footer-tag"><a href="../../">Home</a> · <a href="../../#projects">All projects</a> · <a href="../../#contact">Contact</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""></div>
+  <script src="../../assets/js/project.js" defer></script>
+</body>
+</html>

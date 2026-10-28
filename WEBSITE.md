@@ -15,18 +15,21 @@ It is a plain static site (HTML, CSS and vanilla JavaScript, no build step), hos
 
 ```
 Portfolio/
-├── index.html                      # The whole site: all copy, sections and project cards
+├── index.html                      # Home page: all sections and the project cards
+├── projects/<slug>/index.html      # One case-study page per project (20 pages)
 ├── 404.html                        # Standalone "Page not found" page (served by GitHub Pages)
 ├── robots.txt                      # Allows all crawlers, points to the sitemap
-├── sitemap.xml                     # Single-URL sitemap
+├── sitemap.xml                     # Home page plus every project page
 ├── .nojekyll                       # Tells GitHub Pages to serve files as-is (no Jekyll)
 ├── WEBSITE.md                      # This guide (README.md is the CV)
 └── assets/
     ├── Sakiul_Mowla_Ramim_CV.pdf   # Downloadable CV
     ├── css/
-    │   └── style.css               # All styles; theme colours are CSS variables at the top
+    │   ├── style.css               # All styles; theme colours are CSS variables at the top
+    │   └── project.css             # Extra styles for the project pages
     ├── js/
-    │   └── main.js                 # Theme toggle, nav, project filters, simulated telemetry
+    │   ├── main.js                 # Theme toggle, nav, project filters, simulated telemetry
+    │   └── project.js              # Project pages: theme toggle, image zoom
     └── img/
         ├── logo-256.png            # IoTWithRamim logo (header, 404 page)
         ├── favicon-64.png          # browser-tab icon
@@ -72,6 +75,9 @@ Keep asset links in `index.html`
 - **Theme colours:** the palette is defined as CSS variables at the top of `assets/css/style.css`
   (`:root[data-theme="dark"]` and `:root[data-theme="light"]`), for example `--accent`, `--accent-2`, `--bg`.
 - **Social preview / favicon:** `assets/img/og-image.png` (1200x630), `assets/img/favicon-64.png` and `assets/img/apple-touch-icon.png`.
+- **Project pages:** each card links to `projects/<slug>/index.html`, a plain HTML page you can edit
+  directly. Photos sit next to it in `projects/<slug>/img/`. To add a page, copy an existing project
+  folder, edit the text, link a new card to it, and add its URL to `sitemap.xml`.
 - **Old address:** `Portfolio/index.html` redirects https://ramimiot.github.io/Portfolio/ to the root, and `404.html` forwards any other old `/Portfolio/...` link.
 
 ### Adding a project card
