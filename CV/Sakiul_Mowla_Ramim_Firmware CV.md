@@ -6,7 +6,7 @@ Chittagong, Bangladesh | [+880 1836-655063](tel:+8801836655063) | ramim.cse.uctc
 ---
 
 ### **PROFESSIONAL SUMMARY**
-Results-driven Lead Embedded Firmware Engineer with over 4 years of hands-on experience architecting, developing, and validating cutting-edge MCU-based systems. Operating a fully equipped remote hardware R&D lab, specializing in Embedded C/C++, RTOS environments, and bare-metal programming. Highly proficient in MCU register-level manipulation, custom ISR development, and hardware schematic integration for industrial and robotic systems. Proven ability to build deterministic testing frameworks utilizing logic analyzers, UART traces, and Python, ensuring real-time determinism and uncompromising reliability in complex embedded edge devices.
+Results-driven Lead Embedded Firmware Engineer with over 5 years of hands-on experience architecting, developing, and validating cutting-edge MCU-based systems. Operating a fully equipped remote hardware R&D lab, specializing in Embedded C/C++, RTOS environments, and bare-metal programming. Highly proficient in MCU register-level manipulation, custom ISR development, and hardware schematic integration for industrial and robotic systems. Proven ability to build deterministic testing frameworks utilizing logic analyzers, UART traces, and Python, ensuring real-time determinism and uncompromising reliability in complex embedded edge devices.
 
 ---
 

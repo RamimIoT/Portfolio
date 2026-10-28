@@ -6,7 +6,7 @@ Chittagong, Bangladesh | [+880 1836-655063](tel:+8801836655063) | ramim.cse.uctc
 ---
 
 ### **PROFESSIONAL SUMMARY**
-Performance-driven **IoT Engineer** with over 4 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Raspberry Pi) and scalable cloud infrastructure. Proven track record of leading product life-cycles from prototype to mass manufacturing for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with Node-RED, and developing scalable Python backends for real-time telemetry.
+Performance-driven **IoT Engineer** with over 5 years of experience architecting end-to-end industrial solutions. Expert in bridging the gap between industrial edge hardware (ESP32, Raspberry Pi) and scalable cloud infrastructure. Proven track record of leading product life-cycles from prototype to mass manufacturing for the Aquaculture, Utility, and Energy sectors. Adept at implementing robust industrial protocols (Modbus, BACnet), optimizing Linux-based gateways with Node-RED, and developing scalable Python backends for real-time telemetry.
 
 ---
 
